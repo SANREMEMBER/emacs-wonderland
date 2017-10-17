@@ -1,7 +1,4 @@
 (package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
-(package-install-selected-packages)
 
 ;;------------------------------------------------------------------------
 ;; PERSONAL INFORMATION
@@ -38,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (evil-leader arjen-grey-theme evil-escape org-bullets evil helm))))
+    (magit evil-leader arjen-grey-theme evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
@@ -48,6 +45,8 @@
 ;; Better header bullets
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; Closing timestamp
+(setq org-log-done 'time)
 ;; Real bullets
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*]\\) "
@@ -88,11 +87,19 @@
 (evil-leader/set-key
  "<SPC>" 'helm-M-x
  "ff" 'helm-find-files
- "fs" 'write-file
+ "fr" 'helm-recentf
+ "fs" 'save-buffer
  "bb" 'helm-mini
  "bd" 'kill-this-buffer
+ "pi" 'package-install
+ "pr" 'package-refresh-contents
+ "pl" 'package-list-packages
  "qq" 'save-buffers-kill-terminal
  "u" 'undo-tree-visualize
+ "w-" 'split-window-below
+ "w/" 'split-window-right
+ "wd" 'delete-window
+ "wD" 'delete-other-windows
  "y" 'helm-show-kill-ring)
 
 ;;------------------------------------------------------------------------
@@ -116,8 +123,8 @@
 ;;------------------------------------------------------------------------
 ;; BACKUP FILES
 ;;------------------------------------------------------------------------
-(defvar backup-dir (expand-file-name "~/ditch/backup/"))
-(defvar autosave-dir (expand-file-name "~/ditch/autosave/"))
+(defvar backup-dir (expand-file-name "~/.ditch/backup/"))
+(defvar autosave-dir (expand-file-name "~/.ditch/autosave/"))
 (setq backup-directory-alist (list (cons ".*" backup-dir)))
 (setq auto-save-list-file-prefix autosave-dir)
 (setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
