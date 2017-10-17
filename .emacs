@@ -139,6 +139,8 @@
  "wd" 'delete-window
  "wD" 'delete-other-windows
  "y" 'helm-show-kill-ring)
+;; evil special key
+(define-key evil-normal-state-map (kbd "SPC TAB") 'evil-switch-to-windows-last-buffer)
 
 ;;------------------------------------------------------------------------
 ;; HELM-MODE
