@@ -40,6 +40,8 @@
    CLOSED: [2017-10-18 Rab 04:33]
 ** SUCCESS Train Evil to use Magit
    CLOSED: [2017-10-18 Rab 04:51]
+** SUCCESS Powerline for more power
+   CLOSED: [2017-10-18 Rab 05:21]
 ** TODO Train the leader of Evil [30%]
    - [ ] A 
    - [X] B for buffers
@@ -67,9 +69,9 @@
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
-** TODO Powerline for more power
+** TODO Improve Powerline skills with Diminish power
+** TODO Create ability to create comment
 ** NEXT Train Evil to use org
-** NEXT Create ability to create comment
 ** NEXT Improve skill to jumping
 
 ** NEXT Get power of completion

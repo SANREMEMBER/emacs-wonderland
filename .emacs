@@ -28,7 +28,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (spaceline evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -43,6 +43,16 @@
 (doom-themes-visual-bell-config)
 ;; Corrects (and improves) org-mode's native fontification.
 (doom-themes-org-config)
+
+;;------------------------------------------------------------------------
+;; SPACELINE
+;;------------------------------------------------------------------------
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+;; Separator style
+(setq powerline-default-separator 'slant
+      powerline-height 20)
+(spaceline-compile)
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
