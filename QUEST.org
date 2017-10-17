@@ -1,0 +1,64 @@
+#+TITLE: Game quest of Emacs Knigt
+#+DATE: <2017-10-17 Sel> 
+#+AUTHOR: Hasannudin Amin
+#+EMAIL: sanremember@protonmail.com
+#+SEQ_TODO: SOMEDAY(d) NEXT(n) TODO(t) | SUCCESS(s) CANCEL(c) FAIL(f)
+
+* Collect Items, Improve Skills and Defeat Enemies
+
+** SUCCESS Get Helm to increase power
+   CLOSED: [2017-10-17 Sel 15:46]
+
+** SUCCESS Evil taming
+   CLOSED: [2017-10-17 Sel 15:46]
+
+** SUCCESS Find the Evil leader
+   CLOSED: [2017-10-17 Sel 15:46]
+
+** SUCCESS Org closing item
+   CLOSED: [2017-10-17 Sel 15:47]
+** SUCCESS Get Magit for magical of Git
+   CLOSED: [2017-10-17 Sel 16:52]
+** TODO Train the leader of Evil [23%]
+   - [ ] A 
+   - [X] B for buffers
+   - [ ] C
+   - [ ] D
+   - [ ] E
+   - [X] F for files
+   - [ ] G
+   - [ ] H
+   - [ ] I
+   - [ ] G
+   - [ ] K
+   - [ ] L
+   - [ ] M
+   - [ ] N
+   - [ ] O
+   - [X] P for packages
+   - [X] Q for quit
+   - [ ] R
+   - [ ] S
+   - [ ] T
+   - [ ] U
+   - [ ] V
+   - [X] W for windows
+   - [ ] X
+   - [X] Y for yanking
+   - [ ] Z
+
+** TODO Create skill to insert line below and above
+
+** NEXT Train Evil to use Magit
+
+** NEXT Get power of completion
+
+** SOMEDAY Get good looking theme for your eyes
+** SOMEDAY Grab good items on Awesome Emacs repository
+** SOMEDAY Improve language ability of aspell
+** SOMEDAY Beat the Hydra
+** SOMEDAY Try to use tiny menu
+** SOMEDAY Beyond the Thunderbird, send mail with gnus
+** SOMEDAY Improve skill to translate something
+** SOMEDAY Create ability to publish project
+** SOMEDAY Switch Evil with God
