@@ -38,6 +38,8 @@
 
 ** SUCCESS Get good looking theme for your eyes
    CLOSED: [2017-10-18 Rab 04:33]
+** SUCCESS Train Evil to use Magit
+   CLOSED: [2017-10-18 Rab 04:51]
 ** TODO Train the leader of Evil [30%]
    - [ ] A 
    - [X] B for buffers
@@ -65,11 +67,10 @@
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
-** TODO Train Evil to use Magit
+** TODO Powerline for more power
 ** NEXT Train Evil to use org
 ** NEXT Create ability to create comment
 ** NEXT Improve skill to jumping
-** NEXT Powerline for more power
 
 ** NEXT Get power of completion
 

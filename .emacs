@@ -28,7 +28,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -84,6 +84,8 @@
 ;;------------------------------------------------------------------------
 (require 'evil)
 (evil-mode 1)
+;; Evil with black magic
+(require 'evil-magit)
 ;; Escape with jk
 (evil-escape-mode 1)
 (setq-default
