@@ -50,10 +50,10 @@
                           `(org-level-6 ((t (,@headline ,@variable-tuple))))
                           `(org-level-5 ((t (,@headline ,@variable-tuple))))
                           `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-                          `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.2))))
-                          `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.3))))
-                          `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.4))))
-                          `(org-document-title ((t (,@headline ,@variable-tuple :height 1.5 :underline nil))))))
+                          `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.15))))
+                          `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.2))))
+                          `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.3))))
+                          `(org-document-title ((t (,@headline ,@variable-tuple :height 1.3 :underline nil))))))
 
 ;;------------------------------------------------------------------------
 ;; EVIL-MODE
@@ -73,11 +73,16 @@
 (require 'helm)
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
-(define-key helm-map (kbd "C-M-,") 'helm-select-action)
+(define-key helm-map (kbd "C-z") 'helm-select-action)
 ;; Helm config key
 (require 'helm-config)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(global-set-key (kbd "C-x b") 'helm-mini)
+;; helm mini fuzzy matching
+(setq helm-buffers-fuzzy-matching t
+      helm-recentf-fuzzy-match    t)
 
 
 ;;------------------------------------------------------------------------
