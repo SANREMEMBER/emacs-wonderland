@@ -42,6 +42,8 @@
    CLOSED: [2017-10-18 Rab 04:51]
 ** SUCCESS Powerline for more power
    CLOSED: [2017-10-18 Rab 05:21]
+** SUCCESS Improve Powerline skills with Diminish power
+   CLOSED: [2017-10-18 Rab 05:39]
 ** TODO Train the leader of Evil [30%]
    - [ ] A 
    - [X] B for buffers
@@ -69,7 +71,7 @@
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
-** TODO Improve Powerline skills with Diminish power
+** TODO Improve Diminish power
 ** TODO Create ability to create comment
 ** NEXT Train Evil to use org
 ** NEXT Improve skill to jumping

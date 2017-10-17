@@ -28,7 +28,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (spaceline evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (diminish spaceline evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -53,6 +53,15 @@
 (setq powerline-default-separator 'slant
       powerline-height 20)
 (spaceline-compile)
+;; Diminish power
+(require 'diminish)
+(when (require 'diminish nil 'noerror)
+  (eval-after-load "evil-escape"
+    '(diminish 'evil-escape-mode))
+  (eval-after-load "autorevert"
+    '(diminish 'auto-revert-mode "A"))
+  (eval-after-load "undo-tree"
+    '(diminish 'undo-tree-mode "U")))
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
