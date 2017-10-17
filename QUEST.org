@@ -31,7 +31,10 @@
 
 ** SUCCESS Cleaning scratch home
    CLOSED: [2017-10-17 Sel 18:37]
-** TODO Train the leader of Evil [26%]
+
+** SUCCESS Setting for size of org inline images
+   CLOSED: [2017-10-17 Sel 19:34]
+** TODO Train the leader of Evil [30%]
    - [ ] A 
    - [X] B for buffers
    - [ ] C
@@ -51,14 +54,13 @@
    - [X] Q for quit
    - [ ] R
    - [ ] S
-   - [ ] T
+   - [X] T
    - [ ] U
    - [ ] V
    - [X] W for windows
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
-
 ** NEXT Powerline for more power
 ** NEXT Train Evil to use Magit
 

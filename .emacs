@@ -47,6 +47,8 @@
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;; Closing timestamp
 (setq org-log-done 'time)
+;; Deactivated for inline images
+(setq org-image-actual-width 666)
 ;; Real bullets
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*]\\) "
@@ -100,6 +102,8 @@
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
  "qq" 'save-buffers-kill-terminal
+ "ti" 'org-toggle-inline-images
+ "tl" 'visual-line-mode
  "tm" 'toggle-frame-maximized
  "u" 'undo-tree-visualize
  "w-" 'split-window-below
