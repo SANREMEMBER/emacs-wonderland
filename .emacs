@@ -25,17 +25,14 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
- '(custom-enabled-themes (quote (arjen-grey)))
+ '(custom-enabled-themes (quote (doom-one)))
  '(custom-safe-themes
    (quote
-    ("6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "a19265ef7ecc16ac4579abb1635fd4e3e1185dcacbc01b7a43cf7ad107c27ced" "b9a06c75084a7744b8a38cb48bc987de10d68f0317697ccbd894b2d0aca06d2b" "83db918b06f0b1df1153f21c0d47250556c7ffb5b5e6906d21749f41737babb7" default)))
- '(hl-paren-colors
-   (quote
-    ("#B9F" "#B8D" "#B7B" "#B69" "#B57" "#B45" "#B33" "#B11")))
+    ("9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64" default)))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (magit evil-leader arjen-grey-theme evil-escape org-bullets evil helm))))
+    (doom-themes magit evil-leader arjen-grey-theme evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
@@ -190,12 +187,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Source Code Pro"))))
- '(org-document-title ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.3 :underline nil))))
- '(org-level-1 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.3))))
- '(org-level-2 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.2))))
- '(org-level-3 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.15))))
- '(org-level-4 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro"))))
- '(org-level-6 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro"))))
- '(org-level-7 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro"))))
- '(org-level-8 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro")))))
+ '(org-document-title ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro" :height 1.3 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro" :height 1.3))))
+ '(org-level-2 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro" :height 1.2))))
+ '(org-level-3 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro" :height 1.15))))
+ '(org-level-4 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro"))))
+ '(org-level-6 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro"))))
+ '(org-level-7 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro"))))
+ '(org-level-8 ((t (:inherit default :weight bold :foreground "#bbc2cf" :font "Source Code Pro")))))
