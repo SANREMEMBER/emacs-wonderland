@@ -1,4 +1,7 @@
 (package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+(package-install-selected-packages)
 
 ;;------------------------------------------------------------------------
 ;; PERSONAL INFORMATION
@@ -21,8 +24,21 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+ '(custom-enabled-themes (quote (arjen-grey)))
+ '(custom-safe-themes
+   (quote
+    ("6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "a19265ef7ecc16ac4579abb1635fd4e3e1185dcacbc01b7a43cf7ad107c27ced" "b9a06c75084a7744b8a38cb48bc987de10d68f0317697ccbd894b2d0aca06d2b" "83db918b06f0b1df1153f21c0d47250556c7ffb5b5e6906d21749f41737babb7" default)))
+ '(hl-paren-colors
+   (quote
+    ("#B9F" "#B8D" "#B7B" "#B69" "#B57" "#B45" "#B33" "#B11")))
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (evil-escape org-bullets evil helm))))
+ '(package-selected-packages
+   (quote
+    (evil-leader arjen-grey-theme evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
@@ -66,6 +82,18 @@
  evil-escape-key-sequence "jk"
  evil-escape-unordered-key-sequence "true"
  )
+;; Leader to lead bindings
+(global-evil-leader-mode)
+(evil-leader/set-leader "<SPC>")
+(evil-leader/set-key
+ "<SPC>" 'helm-M-x
+ "ff" 'helm-find-files
+ "fs" 'write-file
+ "bb" 'helm-mini
+ "bd" 'kill-this-buffer
+ "qq" 'save-buffers-kill-terminal
+ "u" 'undo-tree-visualize
+ "y" 'helm-show-kill-ring)
 
 ;;------------------------------------------------------------------------
 ;; HELM-MODE
@@ -103,3 +131,22 @@
 (when (display-graphic-p)
   (tool-bar-mode -1)
   (scroll-bar-mode -1))
+
+;;------------------------------------------------------------------------
+;; CUSTOM FACES
+;;------------------------------------------------------------------------
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Source Code Pro"))))
+ '(org-document-title ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.3 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.3))))
+ '(org-level-2 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.2))))
+ '(org-level-3 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.15))))
+ '(org-level-4 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro"))))
+ '(org-level-6 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro"))))
+ '(org-level-7 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro"))))
+ '(org-level-8 ((t (:inherit default :weight bold :foreground "#bdc3ce" :font "Source Code Pro")))))
