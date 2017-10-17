@@ -22,7 +22,13 @@
 
 ** SUCCESS Create skill to insert line below and above
    CLOSED: [2017-10-17 Sel 17:05]
-** TODO Train the leader of Evil [23%]
+
+** SUCCESS Change size of window
+   CLOSED: [2017-10-17 Sel 18:04]
+
+** SUCCESS Save place for better place
+   CLOSED: [2017-10-17 Sel 18:21]
+** TODO Train the leader of Evil [26%]
    - [ ] A 
    - [X] B for buffers
    - [ ] C
@@ -31,7 +37,7 @@
    - [X] F for files
    - [ ] G
    - [ ] H
-   - [ ] I
+   - [X] I for insert
    - [ ] G
    - [ ] K
    - [ ] L
@@ -50,16 +56,27 @@
    - [X] Y for yanking
    - [ ] Z
 
+** TODO Cleaning scratch home
+
+** NEXT Powerline for more power
 ** NEXT Train Evil to use Magit
 
 ** NEXT Get power of completion
 
 ** SOMEDAY Get good looking theme for your eyes
+
 ** SOMEDAY Grab good items on Awesome Emacs repository
+
 ** SOMEDAY Improve language ability of aspell
+
 ** SOMEDAY Beat the Hydra
+
 ** SOMEDAY Try to use tiny menu
+
 ** SOMEDAY Beyond the Thunderbird, send mail with gnus
+
 ** SOMEDAY Improve skill to translate something
+
 ** SOMEDAY Create ability to publish project
+
 ** SOMEDAY Switch Evil with God

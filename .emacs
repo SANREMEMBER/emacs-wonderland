@@ -92,12 +92,15 @@
  "bb" 'helm-mini
  "bd" 'kill-this-buffer
  "gs" 'magit-status
+ "gl" 'magit-log-all
+ "gp" 'magit-push
  "ij" 'insert-line-below
  "ik" 'insert-line-above
  "pi" 'package-install
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
  "qq" 'save-buffers-kill-terminal
+ "tm" 'toggle-frame-maximized
  "u" 'undo-tree-visualize
  "w-" 'split-window-below
  "w/" 'split-window-right
@@ -118,10 +121,14 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-mini)
-;; helm mini fuzzy matching
+;; Helm mini fuzzy matching
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
 
+;;------------------------------------------------------------------------
+;; SAVE PLACE
+;;------------------------------------------------------------------------
+(save-place-mode 1)
 
 ;;------------------------------------------------------------------------
 ;; BACKUP FILES
@@ -135,13 +142,21 @@
 (setq tramp-auto-save-directory autosave-dir)
 
 ;;------------------------------------------------------------------------
-;; MENU ELEMENT
+;; WINDOW ENHANCEMENT
 ;;------------------------------------------------------------------------
+;; Hide (m)anything
 (menu-bar-mode -1)
 (when (display-graphic-p)
   (tool-bar-mode -1)
   (scroll-bar-mode -1))
+;; Window geometry
+(add-to-list 'default-frame-alist '(height . 30))
+(add-to-list 'default-frame-alist '(width . 75))
 
+
+;;------------------------------------------------------------------------
+;; INSERT LINE FUNCTION
+;;------------------------------------------------------------------------
 (defun insert-line-below ()
   "Insert an empty line below the current line."
   (interactive)
@@ -149,9 +164,6 @@
     (end-of-line)
     (open-line 1)))
 
-;;------------------------------------------------------------------------
-;; INSERT LINE FUNCTION
-;;------------------------------------------------------------------------
 (defun insert-line-above ()
   "Insert an empty line above the current line."
   (interactive)
