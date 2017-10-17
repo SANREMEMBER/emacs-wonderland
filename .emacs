@@ -152,7 +152,13 @@
 ;; Window geometry
 (add-to-list 'default-frame-alist '(height . 30))
 (add-to-list 'default-frame-alist '(width . 75))
+;; Scratch message
+(setq initial-scratch-message "
+;;------------------------------------------------------------------------
+;; SANREMEMBER @ EMACSKNIGHT /////////////////////////////////////////////
+;;------------------------------------------------------------------------
 
+")
 
 ;;------------------------------------------------------------------------
 ;; INSERT LINE FUNCTION

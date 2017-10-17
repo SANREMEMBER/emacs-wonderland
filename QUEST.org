@@ -28,6 +28,9 @@
 
 ** SUCCESS Save place for better place
    CLOSED: [2017-10-17 Sel 18:21]
+
+** SUCCESS Cleaning scratch home
+   CLOSED: [2017-10-17 Sel 18:37]
 ** TODO Train the leader of Evil [26%]
    - [ ] A 
    - [X] B for buffers
@@ -55,8 +58,6 @@
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
-
-** TODO Cleaning scratch home
 
 ** NEXT Powerline for more power
 ** NEXT Train Evil to use Magit
