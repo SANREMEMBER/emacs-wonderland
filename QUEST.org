@@ -17,6 +17,7 @@
 
 ** SUCCESS Org closing item
    CLOSED: [2017-10-17 Sel 15:47]
+
 ** SUCCESS Get Magit for magical of Git
    CLOSED: [2017-10-17 Sel 16:52]
 
@@ -34,6 +35,9 @@
 
 ** SUCCESS Setting for size of org inline images
    CLOSED: [2017-10-17 Sel 19:34]
+
+** SUCCESS Get good looking theme for your eyes
+   CLOSED: [2017-10-18 Rab 04:33]
 ** TODO Train the leader of Evil [30%]
    - [ ] A 
    - [X] B for buffers
@@ -61,12 +65,13 @@
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
+** TODO Train Evil to use Magit
+** NEXT Train Evil to use org
+** NEXT Create ability to create comment
+** NEXT Improve skill to jumping
 ** NEXT Powerline for more power
-** NEXT Train Evil to use Magit
 
 ** NEXT Get power of completion
-
-** SOMEDAY Get good looking theme for your eyes
 
 ** SOMEDAY Grab good items on Awesome Emacs repository
 

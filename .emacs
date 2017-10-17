@@ -25,14 +25,24 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
- '(custom-enabled-themes (quote (doom-one)))
- '(custom-safe-themes
-   (quote
-    ("9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64" default)))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (doom-themes magit evil-leader arjen-grey-theme evil-escape org-bullets evil helm))))
+    (doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+
+;;------------------------------------------------------------------------
+;; DOOM THEMES
+;;------------------------------------------------------------------------
+(require 'doom-themes)
+;; Global settings (defaults)
+(setq doom-themes-enable-bold t 
+      doom-themes-enable-italic t)
+;; Load the theme
+(load-theme 'doom-one t)
+;; Enable flashing mode-line on errors
+(doom-themes-visual-bell-config)
+;; Corrects (and improves) org-mode's native fontification.
+(doom-themes-org-config)
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
