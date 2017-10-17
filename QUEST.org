@@ -19,6 +19,9 @@
    CLOSED: [2017-10-17 Sel 15:47]
 ** SUCCESS Get Magit for magical of Git
    CLOSED: [2017-10-17 Sel 16:52]
+
+** SUCCESS Create skill to insert line below and above
+   CLOSED: [2017-10-17 Sel 17:05]
 ** TODO Train the leader of Evil [23%]
    - [ ] A 
    - [X] B for buffers
@@ -46,8 +49,6 @@
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
-
-** TODO Create skill to insert line below and above
 
 ** NEXT Train Evil to use Magit
 

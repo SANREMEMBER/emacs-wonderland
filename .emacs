@@ -91,6 +91,9 @@
  "fs" 'save-buffer
  "bb" 'helm-mini
  "bd" 'kill-this-buffer
+ "gs" 'magit-status
+ "ij" 'insert-line-below
+ "ik" 'insert-line-above
  "pi" 'package-install
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
@@ -138,6 +141,23 @@
 (when (display-graphic-p)
   (tool-bar-mode -1)
   (scroll-bar-mode -1))
+
+(defun insert-line-below ()
+  "Insert an empty line below the current line."
+  (interactive)
+  (save-excursion
+    (end-of-line)
+    (open-line 1)))
+
+;;------------------------------------------------------------------------
+;; INSERT LINE FUNCTION
+;;------------------------------------------------------------------------
+(defun insert-line-above ()
+  "Insert an empty line above the current line."
+  (interactive)
+  (save-excursion
+    (end-of-line 0)
+    (open-line 1)))
 
 ;;------------------------------------------------------------------------
 ;; CUSTOM FACES
