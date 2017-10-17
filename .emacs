@@ -53,6 +53,17 @@
 (setq powerline-default-separator 'slant
       powerline-height 20)
 (spaceline-compile)
+;;(spaceline-toggle-minor-modes-off)
+;;(spaceline-toggle-hud-off)
+;; Change state, change color
+(setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
+(set-face-attribute 'spaceline-evil-emacs nil :background "#be84ff")
+(set-face-attribute 'spaceline-evil-insert nil :background "#a6e22e")
+(set-face-attribute 'spaceline-evil-motion nil :background "#ae81ff")
+(set-face-attribute 'spaceline-evil-normal nil :background "#51afef")
+(set-face-attribute 'spaceline-evil-replace nil :background "#f92672")
+(set-face-attribute 'spaceline-evil-visual nil :background "#fd971f")
+(powerline-reset)
 ;; Diminish power
 (require 'diminish)
 (when (require 'diminish nil 'noerror)
