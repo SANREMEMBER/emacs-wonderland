@@ -25,10 +25,13 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+ '(custom-safe-themes
+   (quote
+    ("a94f1a015878c5f00afab321e4fef124b2fc3b823c8ddd89d360d710fc2bddfc" "9f569b5e066dd6ca90b3578ff46659bc09a8764e81adf6265626d7dc0fac2a64" default)))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (avy diminish spaceline evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -45,26 +48,18 @@
 (doom-themes-org-config)
 
 ;;------------------------------------------------------------------------
-;; SPACELINE
+;; POWERLINE
 ;;------------------------------------------------------------------------
-(require 'spaceline-config)
-(spaceline-spacemacs-theme)
-;; Separator style
+(require 'powerline)
+(powerline-default-theme)
+;; Powerline separator and height
 (setq powerline-default-separator 'slant
-      powerline-height 20)
-(spaceline-compile)
-;;(spaceline-toggle-minor-modes-off)
-;;(spaceline-toggle-hud-off)
-;; Change state, change color
-(setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
-(set-face-attribute 'spaceline-evil-emacs nil :background "#C678DD")
-(set-face-attribute 'spaceline-evil-insert nil :background "#98BE65")
-(set-face-attribute 'spaceline-evil-motion nil :background "#ae81ff")
-(set-face-attribute 'spaceline-evil-normal nil :background "#BBC2CF")
-(set-face-attribute 'spaceline-evil-replace nil :background "#ECBE7B")
-(set-face-attribute 'spaceline-evil-visual nil :background "#DA8548")
-(powerline-reset)
-;; Diminish power
+       powerline-height 20)
+;; airline power of style
+(require 'airline-themes)
+(load-theme 'airline-doom-one)
+(setq airline-display-directory nil)
+;; ;; Diminish power
 (require 'diminish)
 (when (require 'diminish nil 'noerror)
   (eval-after-load "evil-escape"

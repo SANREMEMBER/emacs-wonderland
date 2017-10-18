@@ -82,11 +82,11 @@
    - [X] Y for yanking
    - [ ] Z
 ** TODO Improve Diminish power
+
+** TODO Grab good items on Awesome Emacs repository
 ** TODO Train Evil to use org
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion
-
-** NEXT Grab good items on Awesome Emacs repository
 
 ** SOMEDAY Improve language ability of aspell
 
