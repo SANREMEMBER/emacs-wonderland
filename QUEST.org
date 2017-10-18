@@ -78,6 +78,7 @@
    - [X] Y for yanking
    - [ ] Z
 ** TODO Improve Diminish power
+** TODO Solve tab problem
 ** NEXT Train Evil to use org
 ** NEXT Improve skill to jumping
 
