@@ -31,7 +31,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (beacon airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -165,12 +165,6 @@
 ;; Helm mini fuzzy matching
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
-
-;;------------------------------------------------------------------------
-;; COSMETICS
-;;------------------------------------------------------------------------
-(beacon-mode 1)
-(setq beacon-color "#51AFEF")
 
 ;;------------------------------------------------------------------------
 ;; SAVE PLACE
