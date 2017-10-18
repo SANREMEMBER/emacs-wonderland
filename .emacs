@@ -126,8 +126,10 @@
  "hdk" 'describe-key
  "ij" 'insert-line-below
  "ik" 'insert-line-above
- "jl" 'evil-avy-goto-line
  "jc" 'evil-avy-goto-char
+ "jh" 'avy-org-goto-heading-timer
+ "jl" 'evil-avy-goto-line
+ "jt" 'evil-avy-goto-char-timer
  "jw" 'evil-avy-goto-word-1
  "pi" 'package-install
  "pr" 'package-refresh-contents
