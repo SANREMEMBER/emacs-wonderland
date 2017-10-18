@@ -57,7 +57,13 @@
        powerline-height 20)
 ;; airline power of style
 (require 'airline-themes)
-(load-theme 'airline-doom-one)
+(load-theme 'airline-doom-one t)
+;; nil on minibuffer
+  (custom-theme-set-faces
+   'airline-doom-one
+   `(minibuffer-prompt ((t (:foreground nil :background nil :inherit 'default))))
+  )
+;; nil to display full dir
 (setq airline-display-directory nil)
 ;; ;; Diminish power
 (require 'diminish)
