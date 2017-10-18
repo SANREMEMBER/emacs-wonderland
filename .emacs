@@ -57,12 +57,12 @@
 ;;(spaceline-toggle-hud-off)
 ;; Change state, change color
 (setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
-(set-face-attribute 'spaceline-evil-emacs nil :background "#be84ff")
-(set-face-attribute 'spaceline-evil-insert nil :background "#a6e22e")
+(set-face-attribute 'spaceline-evil-emacs nil :background "#C678DD")
+(set-face-attribute 'spaceline-evil-insert nil :background "#98BE65")
 (set-face-attribute 'spaceline-evil-motion nil :background "#ae81ff")
-(set-face-attribute 'spaceline-evil-normal nil :background "#51afef")
-(set-face-attribute 'spaceline-evil-replace nil :background "#f92672")
-(set-face-attribute 'spaceline-evil-visual nil :background "#fd971f")
+(set-face-attribute 'spaceline-evil-normal nil :background "#BBC2CF")
+(set-face-attribute 'spaceline-evil-replace nil :background "#ECBE7B")
+(set-face-attribute 'spaceline-evil-visual nil :background "#DA8548")
 (powerline-reset)
 ;; Diminish power
 (require 'diminish)
@@ -132,9 +132,12 @@
  "fs" 'save-buffer
  "bb" 'helm-mini
  "bd" 'kill-this-buffer
+ "cl" 'comment-line
  "gs" 'magit-status
  "gl" 'magit-log-all
  "gp" 'magit-push
+ "hdf" 'describe-function
+ "hdk" 'describe-key
  "ij" 'insert-line-below
  "ik" 'insert-line-above
  "pi" 'package-install
@@ -149,6 +152,10 @@
  "w/" 'split-window-right
  "wd" 'delete-window
  "wD" 'delete-other-windows
+ "wh" 'evil-window-left
+ "wj" 'evil-window-down
+ "wk" 'evil-window-up
+ "wl" 'evil-window-right
  "y" 'helm-show-kill-ring)
 ;; evil special key
 (define-key evil-normal-state-map (kbd "SPC TAB") 'evil-switch-to-windows-last-buffer)

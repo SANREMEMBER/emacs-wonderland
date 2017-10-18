@@ -46,17 +46,21 @@
    CLOSED: [2017-10-18 Rab 05:39]
 ** SUCCESS Teach Powerline about color of Evil emotion
    CLOSED: [2017-10-18 Rab 06:25]
-** TODO Train the leader of Evil [30%]
+** SUCCESS Create ability to comment line
+   CLOSED: [2017-10-18 Rab 07:12]
+** SUCCESS Improve window skill
+   CLOSED: [2017-10-18 Rab 07:33]
+** TODO Train the leader of Evil [42%]
    - [ ] A 
    - [X] B for buffers
    - [ ] C
    - [ ] D
    - [ ] E
    - [X] F for files
-   - [ ] G
-   - [ ] H
+   - [X] G for git
+   - [X] H for help
    - [X] I for insert
-   - [ ] G
+   - [ ] J
    - [ ] K
    - [ ] L
    - [ ] M
@@ -67,14 +71,13 @@
    - [ ] R
    - [ ] S
    - [X] T
-   - [ ] U
+   - [X] U for undo tree
    - [ ] V
    - [X] W for windows
    - [ ] X
    - [X] Y for yanking
    - [ ] Z
 ** TODO Improve Diminish power
-** TODO Create ability to create comment
 ** NEXT Train Evil to use org
 ** NEXT Improve skill to jumping
 
