@@ -77,6 +77,8 @@
 ;; Better header bullets
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; More fancy ellipsis
+(setq org-ellipsis " ")
 ;; Closing timestamp
 (setq org-log-done 'time)
 ;; Deactivated for inline images
