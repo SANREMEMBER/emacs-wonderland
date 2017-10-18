@@ -31,7 +31,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (beacon airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -78,7 +78,7 @@
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;; More fancy ellipsis
-(setq org-ellipsis " ")
+(setq org-ellipsis "  ")
 ;; Closing timestamp
 (setq org-log-done 'time)
 ;; Deactivated for inline images
@@ -165,6 +165,12 @@
 ;; Helm mini fuzzy matching
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
+
+;;------------------------------------------------------------------------
+;; COSMETICS
+;;------------------------------------------------------------------------
+(beacon-mode 1)
+(setq beacon-color "#51AFEF")
 
 ;;------------------------------------------------------------------------
 ;; SAVE PLACE
