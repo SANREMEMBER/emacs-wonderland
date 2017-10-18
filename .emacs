@@ -189,10 +189,13 @@
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 ;;------------------------------------------------------------------------
-;; ALL THE ICONS
+;; DIRED
 ;;------------------------------------------------------------------------
-;; Dired
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+;; Hide details
+(add-hook 'dired-mode-hook
+      (lambda ()
+        (dired-hide-details-mode)))
 
 ;;------------------------------------------------------------------------
 ;; SAVE PLACE

@@ -58,6 +58,8 @@
    CLOSED: [2017-10-19 Kam 04:50]
 ** SUCCESS New looking with all the icon
    CLOSED: [2017-10-19 Kam 05:24]
+** SUCCESS Clear Dired details
+   CLOSED: [2017-10-19 Kam 06:12]
 ** TODO Train the leader of Evil [46%]
    - [ ] A 
    - [X] B for buffers
@@ -89,7 +91,6 @@
 
 ** TODO Grab good items on Awesome Emacs repository
 ** TODO Train Evil to use org
-** NEXT Clear Dired details
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion
 ** NEXT Learn how to learn
