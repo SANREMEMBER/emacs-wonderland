@@ -28,7 +28,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (diminish spaceline evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (avy diminish spaceline evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -126,6 +126,9 @@
  "hdk" 'describe-key
  "ij" 'insert-line-below
  "ik" 'insert-line-above
+ "jl" 'evil-avy-goto-line
+ "jc" 'evil-avy-goto-char
+ "jw" 'evil-avy-goto-word-1
  "pi" 'package-install
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages

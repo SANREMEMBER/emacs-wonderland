@@ -52,7 +52,9 @@
    CLOSED: [2017-10-18 Rab 07:33]
 ** SUCCESS Solve tab problem on emacs terminal
    CLOSED: [2017-10-18 Rab 08:25]
-** TODO Train the leader of Evil [42%]
+** SUCCESS Improve skill to jumping
+   CLOSED: [2017-10-18 Rab 14:24]
+** TODO Train the leader of Evil [46%]
    - [ ] A 
    - [X] B for buffers
    - [ ] C
@@ -62,7 +64,7 @@
    - [X] G for git
    - [X] H for help
    - [X] I for insert
-   - [ ] J
+   - [X] J for jumping
    - [ ] K
    - [ ] L
    - [ ] M
@@ -81,7 +83,6 @@
    - [ ] Z
 ** TODO Improve Diminish power
 ** NEXT Train Evil to use org
-** NEXT Improve skill to jumping
 
 ** NEXT Get power of completion
 
