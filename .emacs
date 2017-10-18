@@ -117,7 +117,7 @@
 (evil-leader/set-key
  "<SPC>" 'helm-M-x
  "ff" 'helm-find-files
- "fn" 'neotree-toggle
+ "fn" 'neotree
  "fr" 'helm-recentf
  "fs" 'save-buffer
  "bb" 'helm-mini
@@ -142,6 +142,7 @@
  "ti" 'org-toggle-inline-images
  "tl" 'visual-line-mode
  "tm" 'toggle-frame-maximized
+ "tn" 'neotree-toggle
  "tb" 'menu-bar-mode
  "u" 'undo-tree-visualize
  "w-" 'split-window-below

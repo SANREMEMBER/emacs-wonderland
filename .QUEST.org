@@ -94,6 +94,7 @@
 ** NEXT Get power of completion
 ** NEXT Learn how to learn
 ** NEXT Clear mind of the knight
+** SOMEDAY Switch Helm with Ivy weapon
 ** SOMEDAY Improve language ability of aspell
 
 ** SOMEDAY Beat the Hydra
@@ -102,6 +103,7 @@
 
 ** SOMEDAY Beyond the Thunderbird, send mail with gnus
 
+** SOMEDAY All the icons for GNUS for new performance
 ** SOMEDAY Improve skill to translate something
 
 ** SOMEDAY Create ability to publish project
