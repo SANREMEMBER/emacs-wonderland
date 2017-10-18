@@ -147,6 +147,7 @@
  "ti" 'org-toggle-inline-images
  "tl" 'visual-line-mode
  "tm" 'toggle-frame-maximized
+ "tb" 'menu-bar-mode
  "u" 'undo-tree-visualize
  "w-" 'split-window-below
  "w/" 'split-window-right
