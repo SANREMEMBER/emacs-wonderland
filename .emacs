@@ -31,7 +31,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -186,6 +186,12 @@
 	    (define-key evil-normal-state-local-map (kbd "H") 'neotree-hidden-file-toggle)))
 ;; Neotree theme
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+;;------------------------------------------------------------------------
+;; ALL THE ICONS
+;;------------------------------------------------------------------------
+;; Dired
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
 ;;------------------------------------------------------------------------
 ;; SAVE PLACE
