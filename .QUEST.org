@@ -54,6 +54,8 @@
    CLOSED: [2017-10-18 Rab 08:25]
 ** SUCCESS Improve skill to jumping
    CLOSED: [2017-10-18 Rab 14:24]
+** SUCCESS Get neo power from Neotree
+   CLOSED: [2017-10-19 Kam 04:50]
 ** TODO Train the leader of Evil [46%]
    - [ ] A 
    - [X] B for buffers
@@ -89,7 +91,6 @@
 ** NEXT Get power of completion
 ** NEXT Learn how to learn
 ** NEXT Clear mind of the knight
-** SOMEDAY Get neo power from Neotree
 ** SOMEDAY New looking with all the icon
 ** SOMEDAY Improve language ability of aspell
 

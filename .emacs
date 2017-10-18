@@ -31,7 +31,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -117,6 +117,7 @@
 (evil-leader/set-key
  "<SPC>" 'helm-M-x
  "ff" 'helm-find-files
+ "fn" 'neotree-toggle
  "fr" 'helm-recentf
  "fs" 'save-buffer
  "bb" 'helm-mini
@@ -171,6 +172,20 @@
 ;; Helm mini fuzzy matching
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)
+
+;;------------------------------------------------------------------------
+;; NEOTREE
+;;------------------------------------------------------------------------
+;; Evil use Neotree
+(add-hook 'neotree-mode-hook
+          (lambda ()
+            (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+            (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+            (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
+	    (define-key evil-normal-state-local-map (kbd "H") 'neotree-hidden-file-toggle)))
+;; Neotree theme
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 ;;------------------------------------------------------------------------
 ;; SAVE PLACE
