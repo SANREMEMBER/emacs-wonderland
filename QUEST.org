@@ -50,8 +50,8 @@
    CLOSED: [2017-10-18 Rab 07:12]
 ** SUCCESS Improve window skill
    CLOSED: [2017-10-18 Rab 07:33]
-** FAIL Solve tab problem on emacs terminal
-   CLOSED: [2017-10-18 Rab 08:18]
+** SUCCESS Solve tab problem on emacs terminal
+   CLOSED: [2017-10-18 Rab 08:25]
 ** TODO Train the leader of Evil [42%]
    - [ ] A 
    - [X] B for buffers

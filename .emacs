@@ -104,6 +104,10 @@
  evil-escape-key-sequence "jk"
  evil-escape-unordered-key-sequence "true"
  )
+;; Evil respect org tab in terminal
+(add-hook 'org-mode-hook
+	  (lambda ()
+	    (define-key evil-normal-state-map (kbd "TAB") 'org-cycle))) 
 ;; Leader to lead bindings
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
