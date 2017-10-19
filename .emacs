@@ -12,6 +12,7 @@
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 
 (package-initialize)
+
 ;;------------------------------------------------------------------------
 ;; CUSTOM VARIABLES
 ;;------------------------------------------------------------------------
@@ -106,8 +107,7 @@
 ;; EVIL-ESCAPE------------------------------------------------------------
 (evil-escape-mode 1)
 (setq-default evil-escape-key-sequence "jk"
-	      evil-escape-unordered-key-sequence "true"
- )
+	      evil-escape-unordered-key-sequence "true")
 ;; EVIL-LEADER------------------------------------------------------------
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
