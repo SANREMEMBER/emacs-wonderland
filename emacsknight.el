@@ -249,6 +249,38 @@
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 ;;------------------------------------------------------------------------
+;; GNUS
+;;------------------------------------------------------------------------
+;; User Info
+(setq user-mail-address "hasannudinamin@gmail.com"
+      user-full-name "Hasannudin Amin")
+;; Nil method
+(setq gnus-select-method '(nnnil))
+;; Get email, and store in nnml
+(setq gnus-secondary-select-methods
+      '(
+	(nnimap "gmail"
+		(nnimap-address
+		 "imap.gmail.com")
+		(nnimap-server-port "993")
+		(nnimap-stream ssl))
+	))
+
+(setq smtpmail-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-service 587
+      gnus-ignored-newsgroups "^to\\.\\|^[0-9. ]+\\( \\|$\\)\\|^[\"]\"[#'()]")
+;; Send email via Gmail:
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-default-smtp-server "smtp.gmail.com")
+;; Archive outgoing email in Sent folder on imap.gmail.com:
+(setq gnus-message-archive-method '(nnimap "imap.gmail.com")
+      gnus-message-archive-group "[Gmail]/Surat Terkirim")
+;; store email in ~/gmail directory
+(setq nnml-directory "~/Documents/Mail")
+(setq message-directory "~/Documents/Mail")
+(setq gnus-directory "~/Documents/Mail")
+
+;;------------------------------------------------------------------------
 ;; DIRED
 ;;------------------------------------------------------------------------
 ;; Hide details

@@ -68,6 +68,9 @@
    CLOSED: [2017-10-19 Kam 10:02]
 ** SUCCESS Train Evil to use org
    CLOSED: [2017-10-19 Kam 14:38]
+
+** SUCCESS Beyond the Thunderbird, send mail with Gnus
+   CLOSED: [2017-10-19 Kam 17:29]
 ** TODO Train the leader of Evil [53%]
    - [ ] A 
    - [X] B for buffers
@@ -108,9 +111,7 @@
 
 ** SOMEDAY Try to use tiny menu
 
-** SOMEDAY Beyond the Thunderbird, send mail with gnus
-
-** SOMEDAY All the icons for GNUS for new performance
+** SOMEDAY All the icons for Gnus for new performance
 ** SOMEDAY Improve skill to translate something
 
 ** SOMEDAY Create ability to publish project
