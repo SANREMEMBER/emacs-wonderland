@@ -79,6 +79,8 @@
    CLOSED: [2017-10-19 Kam 18:47]
    - [X] Ivy
    - [X] Smex
+** CANCEL Teach helm to describe function
+   CLOSED: [2017-10-19 Kam 19:17]
 ** TODO Train the leader of Evil [53%]
    - [ ] A 
    - [X] B for buffers
@@ -107,14 +109,14 @@
    - [X] Y for yanking
    - [ ] Z
 ** TODO Improve Diminish power
-** NEXT Teach helm to describe function
+** TODO Org Publish and Org Capture skill
+** TODO Use Deft for my personal wiki
+** TODO Improve skill to translate something
 ** NEXT Get power of completion
-** SOMEDAY Improve language ability of aspell
-
+** NEXT Improve language ability of aspell
 ** SOMEDAY Beat the Hydra
 
 ** SOMEDAY Try to use tiny menu
-** SOMEDAY Improve skill to translate something
 
 ** SOMEDAY Create ability to publish project
 
