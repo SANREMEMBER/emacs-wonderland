@@ -1,3 +1,7 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ---------------------- GENERAL CONFIGURATION ----------------------  ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;------------------------------------------------------------------------
 ;; PERSONAL INFORMATION
 ;;------------------------------------------------------------------------
@@ -32,6 +36,42 @@
  '(package-selected-packages
    (quote
     (all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ---------------------- DISPLAY CONFIGURATION ----------------------- ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;------------------------------------------------------------------------
+;; CUSTOM FACES
+;;------------------------------------------------------------------------
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Source Code Pro")))))
+
+;;------------------------------------------------------------------------
+;; WINDOW ENHANCEMENT
+;;------------------------------------------------------------------------
+;; Hide (m)anything
+(menu-bar-mode -1)
+(when (display-graphic-p)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1))
+;; Window geometry
+(add-to-list 'default-frame-alist '(height . 30))
+(add-to-list 'default-frame-alist '(width . 75))
+;; Scratch message
+(setq initial-scratch-message "
+;;------------------------------------------------------------------------
+;; SANREMEMBER @ EMACSKNIGHT /////////////////////////////////////////////
+;;------------------------------------------------------------------------
+
+")
 
 ;;------------------------------------------------------------------------
 ;; DOOM THEMES
@@ -74,6 +114,13 @@
     '(diminish 'auto-revert-mode "A"))
   (eval-after-load "undo-tree"
     '(diminish 'undo-tree-mode "U")))
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ----------------------- MODES CONFIGURATION ------------------------ ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
@@ -193,40 +240,12 @@
 ;; ALL-THE-ICONS-DIRED-MODE-----------------------------------------------
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
-;;------------------------------------------------------------------------
-;; SAVE-PLACE
-;;------------------------------------------------------------------------
-(save-place-mode 1)
 
-;;------------------------------------------------------------------------
-;; BACKUP FILES
-;;------------------------------------------------------------------------
-(defvar backup-dir (expand-file-name "~/.ditch/backup/"))
-(defvar autosave-dir (expand-file-name "~/.ditch/autosave/"))
-(setq backup-directory-alist (list (cons ".*" backup-dir)))
-(setq auto-save-list-file-prefix autosave-dir)
-(setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
-(setq tramp-backup-directory-alist backup-directory-alist)
-(setq tramp-auto-save-directory autosave-dir)
 
-;;------------------------------------------------------------------------
-;; WINDOW ENHANCEMENT
-;;------------------------------------------------------------------------
-;; Hide (m)anything
-(menu-bar-mode -1)
-(when (display-graphic-p)
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1))
-;; Window geometry
-(add-to-list 'default-frame-alist '(height . 30))
-(add-to-list 'default-frame-alist '(width . 75))
-;; Scratch message
-(setq initial-scratch-message "
-;;------------------------------------------------------------------------
-;; SANREMEMBER @ EMACSKNIGHT /////////////////////////////////////////////
-;;------------------------------------------------------------------------
 
-")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ------------------------ PERSONAL FUNCTION ------------------------- ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;------------------------------------------------------------------------
 ;; INSERT LINE FUNCTION
@@ -245,12 +264,25 @@
     (end-of-line 0)
     (open-line 1)))
 
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ------------------------- MISCELLANEOUS  --------------------------- ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;------------------------------------------------------------------------
-;; CUSTOM FACES
+;; SAVE-PLACE
 ;;------------------------------------------------------------------------
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Source Code Pro")))))
+(save-place-mode 1)
+
+;;------------------------------------------------------------------------
+;; BACKUP FILES
+;;------------------------------------------------------------------------
+(defvar backup-dir (expand-file-name "~/.ditch/backup/"))
+(defvar autosave-dir (expand-file-name "~/.ditch/autosave/"))
+(setq backup-directory-alist (list (cons ".*" backup-dir)))
+(setq auto-save-list-file-prefix autosave-dir)
+(setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
+(setq tramp-backup-directory-alist backup-directory-alist)
+(setq tramp-auto-save-directory autosave-dir)
