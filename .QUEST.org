@@ -64,7 +64,9 @@
    CLOSED: [2017-10-19 Kam 09:21]
 ** SUCCESS Learn how to learn
    CLOSED: [2017-10-19 Kam 09:21]
-** TODO Train the leader of Evil [46%]
+** SUCCESS Switch Helm with Ivy weapon
+   CLOSED: [2017-10-19 Kam 10:02]
+** TODO Train the leader of Evil [50%]
    - [ ] A 
    - [X] B for buffers
    - [ ] C
@@ -83,7 +85,7 @@
    - [X] P for packages
    - [X] Q for quit
    - [ ] R
-   - [ ] S
+   - [X] S for search
    - [X] T
    - [X] U for undo tree
    - [ ] V
@@ -94,7 +96,6 @@
 ** TODO Improve Diminish power
 
 ** TODO Grab good items on Awesome Emacs repository
-** TODO Switch Helm with Ivy weapon
 ** TODO Train Evil to use org
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion

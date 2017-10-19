@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -167,8 +167,10 @@
  "gs" 'magit-status
  "gl" 'magit-log-all
  "gp" 'magit-push
- "hdf" 'describe-function
+ "hdb" 'counsel-descbinds
+ "hdf" 'counsel-describe-function
  "hdk" 'describe-key
+ "hdv" 'counsel-describe-variable
  "ij" 'insert-line-below
  "ik" 'insert-line-above
  "jc" 'evil-avy-goto-char
@@ -180,6 +182,8 @@
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
  "qq" 'save-buffers-kill-terminal
+ "sa" 'counsel-ag
+ "sl" 'counsel-locate
  "ss" 'swiper
  "ti" 'org-toggle-inline-images
  "tl" 'visual-line-mode
@@ -198,28 +202,15 @@
  "y" 'counsel-yank-pop)
 
 ;;------------------------------------------------------------------------
-;; HELM-MODE
-;;------------------------------------------------------------------------
-;; (require 'helm)
-;; (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
-;; (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
-;; (define-key helm-map (kbd "C-z") 'helm-select-action)
-;; ;; Helm config key
-;; (require 'helm-config)
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;; (global-set-key (kbd "M-x") 'helm-M-x)
-;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-;; (global-set-key (kbd "C-x b") 'helm-mini)
-;; ;; Helm mini fuzzy matching
-;; (setq helm-buffers-fuzzy-matching t
-;;       helm-recentf-fuzzy-match    t)
-
-
-;;------------------------------------------------------------------------
 ;; IVY
 ;;------------------------------------------------------------------------
 (ivy-mode 1)
-
+;; add recentf and bookmark to mini
+(setq ivy-use-virtual-buffers t ;; no regexp by default
+      ivy-initial-inputs-alist nil ;; no regexp by default
+      ivy-re-builders-alist ;; allow input not in order
+        '((t   . ivy--regex-ignore-order)))
+ 
 ;;------------------------------------------------------------------------
 ;; NEOTREE
 ;;------------------------------------------------------------------------
@@ -293,6 +284,7 @@
 (setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
 (setq tramp-backup-directory-alist backup-directory-alist)
 (setq tramp-auto-save-directory autosave-dir)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
