@@ -100,7 +100,6 @@
 ;; Escape with jk
 (evil-escape-mode 1)
 (setq-default evil-escape-key-sequence "jk"
-	      evil-escape-key-sequence "JK"
 	      evil-escape-unordered-key-sequence "true"
  )
 ;; Evil respect org tab in terminal
