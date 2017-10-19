@@ -103,14 +103,16 @@
 ;; DIMINISH---------------------------------------------------------------
 (require 'diminish)
 (when (require 'diminish nil 'noerror)
+  (eval-after-load "autorevert"
+    '(diminish 'auto-revert-mode))
   (eval-after-load "evil-escape"
     '(diminish 'evil-escape-mode))
   (eval-after-load "ivy"
     '(diminish 'ivy-mode))
-  (eval-after-load "autorevert"
-    '(diminish 'auto-revert-mode "A"))
   (eval-after-load "undo-tree"
-    '(diminish 'undo-tree-mode "U")))
+    '(diminish 'undo-tree-mode))
+   (eval-after-load "simple"
+    '(diminish 'visual-line-mode "W")))
 
 
 
@@ -184,6 +186,7 @@
  "oa" 'org-agenda			;; O
  "ol" 'org-agenda-list
  "oc" 'org-capture
+ "op" 'org-publish
  "pa" 'package-autoremove		;; P
  "pd" 'package-delete
  "pi" 'package-install
@@ -216,7 +219,9 @@
   "oeh" 'org-html-export-to-html
   "oeo" 'org-odt-export-to-odt
   "oem" 'org-md-export-to-markdown
+  "oib" 'org-tree-to-indirect-buffer
   "oil" 'org-insert-link
+  "ost" 'org-set-tags
 )
 
 ;;------------------------------------------------------------------------
