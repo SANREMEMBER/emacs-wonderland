@@ -147,7 +147,8 @@
 ;; Evil respect org tab in terminal
 (add-hook 'org-mode-hook
 	  (lambda ()
-	    (define-key evil-normal-state-map (kbd "TAB") 'org-cycle))) 
+	    (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
+	    (define-key evil-normal-state-map (kbd "RET") 'org-open-at-point))) 
 ;; evil special key
 (define-key evil-normal-state-map (kbd "SPC TAB") 'evil-switch-to-windows-last-buffer)
 ;; EVIL-MAGIT-------------------------------------------------------------
