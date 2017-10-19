@@ -54,7 +54,7 @@
 ;; Powerline separator and height
 (setq powerline-default-separator 'slant
        powerline-height 20)
-;; airline power of style
+;; AIRLINE-THEMES---------------------------------------------------------
 (require 'airline-themes)
 (load-theme 'airline-doom-one t)
 ;; nil on minibuffer
@@ -64,7 +64,7 @@
   )
 ;; nil to display full dir
 (setq airline-display-directory nil)
-;; Diminish power
+;; DIMINISH---------------------------------------------------------------
 (require 'diminish)
 (when (require 'diminish nil 'noerror)
   (eval-after-load "evil-escape"
@@ -82,31 +82,33 @@
       org-log-done 'time ;; Closing timestap
       org-image-actual-width 666 ;; Widt size for inline images
       )
-;; Better header bullets
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;; Real bullets
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*]\\) "
                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+;; ORG-BULLETS------------------------------------------------------------
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;;------------------------------------------------------------------------
 ;; EVIL-MODE
 ;;------------------------------------------------------------------------
 (require 'evil)
 (evil-mode 1)
-;; Evil with black magic
-(require 'evil-magit)
-;; Escape with jk
-(evil-escape-mode 1)
-(setq-default evil-escape-key-sequence "jk"
-	      evil-escape-unordered-key-sequence "true"
- )
 ;; Evil respect org tab in terminal
 (add-hook 'org-mode-hook
 	  (lambda ()
 	    (define-key evil-normal-state-map (kbd "TAB") 'org-cycle))) 
-;; Leader to lead bindings
+;; evil special key
+(define-key evil-normal-state-map (kbd "SPC TAB") 'evil-switch-to-windows-last-buffer)
+;; EVIL-MAGIT-------------------------------------------------------------
+(require 'evil-magit)
+;; EVIL-ESCAPE------------------------------------------------------------
+(evil-escape-mode 1)
+(setq-default evil-escape-key-sequence "jk"
+	      evil-escape-unordered-key-sequence "true"
+ )
+;; EVIL-LEADER------------------------------------------------------------
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
@@ -184,14 +186,15 @@
 ;;------------------------------------------------------------------------
 ;; DIRED
 ;;------------------------------------------------------------------------
-(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 ;; Hide details
 (add-hook 'dired-mode-hook
       (lambda ()
         (dired-hide-details-mode)))
+;; ALL-THE-ICONS-DIRED-MODE-----------------------------------------------
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
 ;;------------------------------------------------------------------------
-;; SAVE PLACE
+;; SAVE-PLACE
 ;;------------------------------------------------------------------------
 (save-place-mode 1)
 
