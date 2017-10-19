@@ -1,0 +1,7 @@
+#+TITLE: Game quest of Emacs Knigt
+#+DATE: <2017-10-20 Jum>
+#+AUTHOR: Hasannudin Amin
+#+EMAIL: sanremember@protonmail.com
+
+Screenshot from 2017-10-20 04-36-23
+[[https://s19.postimg.org/e2mlhfpmr/Screenshot_from_2017-10-20_04-36-23.png]]
