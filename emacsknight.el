@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -235,6 +235,12 @@
       ivy-re-builders-alist ;; allow input not in order
         '((t   . ivy--regex-ignore-order)))
  
+;;------------------------------------------------------------------------
+;; SMEX
+;;------------------------------------------------------------------------
+(require 'smex)
+(smex-initialize)
+
 ;;------------------------------------------------------------------------
 ;; NEOTREE
 ;;------------------------------------------------------------------------

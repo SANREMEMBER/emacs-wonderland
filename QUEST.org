@@ -74,6 +74,11 @@
 
 ** SUCCESS All the icons for Gnus for new performance
    CLOSED: [2017-10-19 Kam 18:01]
+
+** SUCCESS Grab good items on Awesome Emacs repository
+   CLOSED: [2017-10-19 Kam 18:47]
+   - [X] Ivy
+   - [X] Smex
 ** TODO Train the leader of Evil [53%]
    - [ ] A 
    - [X] B for buffers
@@ -102,10 +107,6 @@
    - [X] Y for yanking
    - [ ] Z
 ** TODO Improve Diminish power
-
-** TODO Grab good items on Awesome Emacs repository
-   - [X] Ivy
-   - [ ] Smex
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion
 ** SOMEDAY Improve language ability of aspell
