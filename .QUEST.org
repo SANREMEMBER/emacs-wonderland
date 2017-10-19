@@ -94,10 +94,10 @@
 ** TODO Improve Diminish power
 
 ** TODO Grab good items on Awesome Emacs repository
+** TODO Switch Helm with Ivy weapon
 ** TODO Train Evil to use org
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion
-** SOMEDAY Switch Helm with Ivy weapon
 ** SOMEDAY Improve language ability of aspell
 
 ** SOMEDAY Beat the Hydra

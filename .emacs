@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
+    (counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil helm))))
 
 
 
@@ -105,6 +105,8 @@
 (when (require 'diminish nil 'noerror)
   (eval-after-load "evil-escape"
     '(diminish 'evil-escape-mode))
+  (eval-after-load "ivy"
+    '(diminish 'ivy-mode))
   (eval-after-load "autorevert"
     '(diminish 'auto-revert-mode "A"))
   (eval-after-load "undo-tree"
@@ -154,12 +156,12 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
- "<SPC>" 'helm-M-x
- "ff" 'helm-find-files
+ "<SPC>" 'counsel-M-x
+ "ff" 'counsel-find-file
  "fn" 'neotree
- "fr" 'helm-recentf
+ "fr" 'counsel-recentf
  "fs" 'save-buffer
- "bb" 'helm-mini
+ "bb" 'ivy-switch-buffer
  "bd" 'kill-this-buffer
  "cl" 'comment-line
  "gs" 'magit-status
@@ -178,6 +180,7 @@
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
  "qq" 'save-buffers-kill-terminal
+ "ss" 'swiper
  "ti" 'org-toggle-inline-images
  "tl" 'visual-line-mode
  "tm" 'toggle-frame-maximized
@@ -192,24 +195,30 @@
  "wj" 'evil-window-down
  "wk" 'evil-window-up
  "wl" 'evil-window-right
- "y" 'helm-show-kill-ring)
+ "y" 'counsel-yank-pop)
 
 ;;------------------------------------------------------------------------
 ;; HELM-MODE
 ;;------------------------------------------------------------------------
-(require 'helm)
-(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
-(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
-(define-key helm-map (kbd "C-z") 'helm-select-action)
-;; Helm config key
-(require 'helm-config)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "M-y") 'helm-show-kill-ring)
-(global-set-key (kbd "C-x b") 'helm-mini)
-;; Helm mini fuzzy matching
-(setq helm-buffers-fuzzy-matching t
-      helm-recentf-fuzzy-match    t)
+;; (require 'helm)
+;; (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+;; (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
+;; (define-key helm-map (kbd "C-z") 'helm-select-action)
+;; ;; Helm config key
+;; (require 'helm-config)
+;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
+;; (global-set-key (kbd "M-x") 'helm-M-x)
+;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+;; (global-set-key (kbd "C-x b") 'helm-mini)
+;; ;; Helm mini fuzzy matching
+;; (setq helm-buffers-fuzzy-matching t
+;;       helm-recentf-fuzzy-match    t)
+
+
+;;------------------------------------------------------------------------
+;; IVY
+;;------------------------------------------------------------------------
+(ivy-mode 1)
 
 ;;------------------------------------------------------------------------
 ;; NEOTREE
@@ -284,3 +293,9 @@
 (setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
 (setq tramp-backup-directory-alist backup-directory-alist)
 (setq tramp-auto-save-directory autosave-dir)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
