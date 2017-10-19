@@ -178,6 +178,8 @@
  "jl" 'evil-avy-goto-line
  "jt" 'evil-avy-goto-char-timer
  "jw" 'evil-avy-goto-word-1
+ "pa" 'package-autoremove
+ "pd" 'package-delete
  "pi" 'package-install
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
