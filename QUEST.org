@@ -96,6 +96,8 @@
 ** TODO Improve Diminish power
 
 ** TODO Grab good items on Awesome Emacs repository
+   - [X] Ivy
+   - [ ] Smex
 ** TODO Train Evil to use org
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion

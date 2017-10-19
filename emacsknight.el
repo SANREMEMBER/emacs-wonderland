@@ -47,7 +47,7 @@
 ;;------------------------------------------------------------------------
 ;; CUSTOM FACES
 ;;------------------------------------------------------------------------
-(set-frame-font "Source Code Pro")
+(set-frame-font "Source Code Pro 11")
 
 ;;------------------------------------------------------------------------
 ;; WINDOW ENHANCEMENT
@@ -157,43 +157,44 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
- "ff" 'counsel-find-file
+ "ff" 'counsel-find-file		;; F
+ "fl" 'counsel-find-library
  "fn" 'neotree
  "fr" 'counsel-recentf
  "fs" 'save-buffer
- "bb" 'ivy-switch-buffer
+ "bb" 'ivy-switch-buffer		;; B
  "bd" 'kill-this-buffer
- "cl" 'comment-line
- "gs" 'magit-status
+ "cl" 'comment-line			;; C
+ "gs" 'magit-status			;; G
  "gl" 'magit-log-all
  "gp" 'magit-push
- "hdb" 'counsel-descbinds
+ "hdb" 'counsel-descbinds		;; H
  "hdf" 'counsel-describe-function
  "hdk" 'describe-key
  "hdv" 'counsel-describe-variable
- "ij" 'insert-line-below
+ "ij" 'insert-line-below		;; I
  "ik" 'insert-line-above
- "jc" 'evil-avy-goto-char
+ "jc" 'evil-avy-goto-char		;; J
  "jh" 'avy-org-goto-heading-timer
  "jl" 'evil-avy-goto-line
  "jt" 'evil-avy-goto-char-timer
  "jw" 'evil-avy-goto-word-1
- "pa" 'package-autoremove
+ "pa" 'package-autoremove		;; P
  "pd" 'package-delete
  "pi" 'package-install
  "pr" 'package-refresh-contents
  "pl" 'package-list-packages
- "qq" 'save-buffers-kill-terminal
- "sa" 'counsel-ag
+ "qq" 'save-buffers-kill-terminal	;; Q
+ "sa" 'counsel-ag			;; S
  "sl" 'counsel-locate
  "ss" 'swiper
- "ti" 'org-toggle-inline-images
+ "ti" 'org-toggle-inline-images		;; T
  "tl" 'visual-line-mode
  "tm" 'toggle-frame-maximized
  "tn" 'neotree-toggle
  "tb" 'menu-bar-mode
- "u" 'undo-tree-visualize
- "w-" 'split-window-below
+ "u" 'undo-tree-visualize		;; U
+ "w-" 'split-window-below		;; W
  "w/" 'split-window-right
  "wd" 'delete-window
  "wD" 'delete-other-windows
@@ -201,7 +202,7 @@
  "wj" 'evil-window-down
  "wk" 'evil-window-up
  "wl" 'evil-window-right
- "y" 'counsel-yank-pop)
+ "y" 'counsel-yank-pop)			;; Y
 
 ;;------------------------------------------------------------------------
 ;; IVY
@@ -268,6 +269,13 @@
 ;; ------------------------- MISCELLANEOUS  --------------------------- ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
 ;; No times for yes
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -287,9 +295,3 @@
 (setq tramp-backup-directory-alist backup-directory-alist)
 (setq tramp-auto-save-directory autosave-dir)
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
