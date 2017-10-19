@@ -4,120 +4,120 @@
 #+EMAIL: sanremember@protonmail.com
 #+SEQ_TODO: SOMEDAY(d) NEXT(n) TODO(t) | SUCCESS(s) CANCEL(c) FAIL(f)
 
-* Collect Items, Improve Skills and Defeat Enemies
+** Collect Items, Improve Skills and Defeat Enemies
 
-** SUCCESS Get Helm to increase power
-   CLOSED: [2017-10-17 Sel 15:46]
+*** SUCCESS Get Helm to increase power
+    CLOSED: [2017-10-17 Sel 15:46]
 
-** SUCCESS Evil taming
-   CLOSED: [2017-10-17 Sel 15:46]
+*** SUCCESS Evil taming
+    CLOSED: [2017-10-17 Sel 15:46]
 
-** SUCCESS Find the Evil leader
-   CLOSED: [2017-10-17 Sel 15:46]
+*** SUCCESS Find the Evil leader
+    CLOSED: [2017-10-17 Sel 15:46]
 
-** SUCCESS Org closing item
-   CLOSED: [2017-10-17 Sel 15:47]
+*** SUCCESS Org closing item
+    CLOSED: [2017-10-17 Sel 15:47]
 
-** SUCCESS Get Magit for magical of Git
-   CLOSED: [2017-10-17 Sel 16:52]
+*** SUCCESS Get Magit for magical of Git
+    CLOSED: [2017-10-17 Sel 16:52]
 
-** SUCCESS Create skill to insert line below and above
-   CLOSED: [2017-10-17 Sel 17:05]
+*** SUCCESS Create skill to insert line below and above
+    CLOSED: [2017-10-17 Sel 17:05]
 
-** SUCCESS Change size of window
-   CLOSED: [2017-10-17 Sel 18:04]
+*** SUCCESS Change size of window
+    CLOSED: [2017-10-17 Sel 18:04]
 
-** SUCCESS Save place for better place
-   CLOSED: [2017-10-17 Sel 18:21]
+*** SUCCESS Save place for better place
+    CLOSED: [2017-10-17 Sel 18:21]
 
-** SUCCESS Cleaning scratch home
-   CLOSED: [2017-10-17 Sel 18:37]
+*** SUCCESS Cleaning scratch home
+    CLOSED: [2017-10-17 Sel 18:37]
 
-** SUCCESS Setting for size of org inline images
-   CLOSED: [2017-10-17 Sel 19:34]
+*** SUCCESS Setting for size of org inline images
+    CLOSED: [2017-10-17 Sel 19:34]
 
-** SUCCESS Get good looking theme for your eyes
-   CLOSED: [2017-10-18 Rab 04:33]
-** SUCCESS Train Evil to use Magit
-   CLOSED: [2017-10-18 Rab 04:51]
-** SUCCESS Powerline for more power
-   CLOSED: [2017-10-18 Rab 05:21]
-** SUCCESS Improve Powerline skills with Diminish power
-   CLOSED: [2017-10-18 Rab 05:39]
-** SUCCESS Teach Powerline about color of Evil emotion
-   CLOSED: [2017-10-18 Rab 06:25]
-** SUCCESS Create ability to comment line
-   CLOSED: [2017-10-18 Rab 07:12]
-** SUCCESS Improve window skill
-   CLOSED: [2017-10-18 Rab 07:33]
-** SUCCESS Solve tab problem on emacs terminal
-   CLOSED: [2017-10-18 Rab 08:25]
-** SUCCESS Improve skill to jumping
-   CLOSED: [2017-10-18 Rab 14:24]
-** SUCCESS Get neo power from Neotree
-   CLOSED: [2017-10-19 Kam 04:50]
-** SUCCESS New looking with all the icon
-   CLOSED: [2017-10-19 Kam 05:24]
-** SUCCESS Clear Dired details
-   CLOSED: [2017-10-19 Kam 06:12]
-** SUCCESS Clear mind of the knight
-   CLOSED: [2017-10-19 Kam 09:21]
-** SUCCESS Learn how to learn
-   CLOSED: [2017-10-19 Kam 09:21]
-** SUCCESS Switch Helm with Ivy weapon
-   CLOSED: [2017-10-19 Kam 10:02]
-** SUCCESS Train Evil to use org
-   CLOSED: [2017-10-19 Kam 14:38]
+*** SUCCESS Get good looking theme for your eyes
+    CLOSED: [2017-10-18 Rab 04:33]
+*** SUCCESS Train Evil to use Magit
+    CLOSED: [2017-10-18 Rab 04:51]
+*** SUCCESS Powerline for more power
+    CLOSED: [2017-10-18 Rab 05:21]
+*** SUCCESS Improve Powerline skills with Diminish power
+    CLOSED: [2017-10-18 Rab 05:39]
+*** SUCCESS Teach Powerline about color of Evil emotion
+    CLOSED: [2017-10-18 Rab 06:25]
+*** SUCCESS Create ability to comment line
+    CLOSED: [2017-10-18 Rab 07:12]
+*** SUCCESS Improve window skill
+    CLOSED: [2017-10-18 Rab 07:33]
+*** SUCCESS Solve tab problem on emacs terminal
+    CLOSED: [2017-10-18 Rab 08:25]
+*** SUCCESS Improve skill to jumping
+    CLOSED: [2017-10-18 Rab 14:24]
+*** SUCCESS Get neo power from Neotree
+    CLOSED: [2017-10-19 Kam 04:50]
+*** SUCCESS New looking with all the icon
+    CLOSED: [2017-10-19 Kam 05:24]
+*** SUCCESS Clear Dired details
+    CLOSED: [2017-10-19 Kam 06:12]
+*** SUCCESS Clear mind of the knight
+    CLOSED: [2017-10-19 Kam 09:21]
+*** SUCCESS Learn how to learn
+    CLOSED: [2017-10-19 Kam 09:21]
+*** SUCCESS Switch Helm with Ivy weapon
+    CLOSED: [2017-10-19 Kam 10:02]
+*** SUCCESS Train Evil to use org
+    CLOSED: [2017-10-19 Kam 14:38]
 
-** SUCCESS Beyond the Thunderbird, send mail with Gnus
-   CLOSED: [2017-10-19 Kam 17:29]
+*** SUCCESS Beyond the Thunderbird, send mail with Gnus
+    CLOSED: [2017-10-19 Kam 17:29]
 
-** SUCCESS All the icons for Gnus for new performance
-   CLOSED: [2017-10-19 Kam 18:01]
+*** SUCCESS All the icons for Gnus for new performance
+    CLOSED: [2017-10-19 Kam 18:01]
 
-** SUCCESS Grab good items on Awesome Emacs repository
-   CLOSED: [2017-10-19 Kam 18:47]
-   - [X] Ivy
-   - [X] Smex
-** CANCEL Teach helm to describe function
-   CLOSED: [2017-10-19 Kam 19:17]
-** TODO Train the leader of Evil [53%]
-   - [ ] A 
-   - [X] B for buffers
-   - [ ] C
-   - [ ] D
-   - [ ] E
-   - [X] F for files
-   - [X] G for git
-   - [X] H for help
-   - [X] I for insert
-   - [X] J for jumping
-   - [ ] K
-   - [ ] L
-   - [ ] M
-   - [ ] N
-   - [X] O for Org
-   - [X] P for packages
-   - [X] Q for quit
-   - [ ] R
-   - [X] S for search
-   - [X] T
-   - [X] U for undo tree
-   - [ ] V
-   - [X] W for windows
-   - [ ] X
-   - [X] Y for yanking
-   - [ ] Z
-** TODO Improve Diminish power
-** TODO Org Publish and Org Capture skill
-** TODO Use Deft for my personal wiki
-** TODO Improve skill to translate something
-** NEXT Get power of completion
-** NEXT Improve language ability of aspell
-** SOMEDAY Beat the Hydra
+*** SUCCESS Grab good items on Awesome Emacs repository
+    CLOSED: [2017-10-19 Kam 18:47]
+    - [X] Ivy
+    - [X] Smex
+*** CANCEL Teach helm to describe function
+    CLOSED: [2017-10-19 Kam 19:17]
+*** TODO Train the leader of Evil [53%]
+    - [ ] A 
+    - [X] B for buffers
+    - [ ] C
+    - [ ] D
+    - [ ] E
+    - [X] F for files
+    - [X] G for git
+    - [X] H for help
+    - [X] I for insert
+    - [X] J for jumping
+    - [ ] K
+    - [ ] L
+    - [ ] M
+    - [ ] N
+    - [X] O for Org
+    - [X] P for packages
+    - [X] Q for quit
+    - [ ] R
+    - [X] S for search
+    - [X] T
+    - [X] U for undo tree
+    - [ ] V
+    - [X] W for windows
+    - [ ] X
+    - [X] Y for yanking
+    - [ ] Z
+*** TODO Improve Diminish power
+*** TODO Org Publish and Org Capture skill
+*** TODO Use Deft for my personal wiki
+*** TODO Improve skill to translate something
+*** NEXT Get power of completion
+*** NEXT Improve language ability of aspell
+*** SOMEDAY Beat the Hydra
 
-** SOMEDAY Try to use tiny menu
+*** SOMEDAY Try to use tiny menu
 
-** SOMEDAY Create ability to publish project
+*** SOMEDAY Create ability to publish project
 
-** SOMEDAY Switch Evil with God
+*** SOMEDAY Switch Evil with God
