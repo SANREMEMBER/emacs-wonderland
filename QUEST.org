@@ -66,7 +66,9 @@
    CLOSED: [2017-10-19 Kam 09:21]
 ** SUCCESS Switch Helm with Ivy weapon
    CLOSED: [2017-10-19 Kam 10:02]
-** TODO Train the leader of Evil [50%]
+** SUCCESS Train Evil to use org
+   CLOSED: [2017-10-19 Kam 14:38]
+** TODO Train the leader of Evil [53%]
    - [ ] A 
    - [X] B for buffers
    - [ ] C
@@ -81,7 +83,7 @@
    - [ ] L
    - [ ] M
    - [ ] N
-   - [ ] O
+   - [X] O for Org
    - [X] P for packages
    - [X] Q for quit
    - [ ] R
@@ -98,7 +100,6 @@
 ** TODO Grab good items on Awesome Emacs repository
    - [X] Ivy
    - [ ] Smex
-** TODO Train Evil to use org
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion
 ** SOMEDAY Improve language ability of aspell

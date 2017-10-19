@@ -139,6 +139,8 @@
 ;; EVIL-MODE
 ;;------------------------------------------------------------------------
 (require 'evil)
+;; evil no abbrev again
+(setq evil-want-abbrev-expand-on-insert-exit nil)
 (evil-mode 1)
 ;; Evil respect org tab in terminal
 (add-hook 'org-mode-hook
@@ -157,14 +159,15 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
+ "bb" 'ivy-switch-buffer		;; B
+ "bd" 'kill-this-buffer
+ "cb" 'comment-box			;; C
+ "cl" 'comment-line
  "ff" 'counsel-find-file		;; F
  "fl" 'counsel-find-library
  "fn" 'neotree
  "fr" 'counsel-recentf
  "fs" 'save-buffer
- "bb" 'ivy-switch-buffer		;; B
- "bd" 'kill-this-buffer
- "cl" 'comment-line			;; C
  "gs" 'magit-status			;; G
  "gl" 'magit-log-all
  "gp" 'magit-push
@@ -175,10 +178,12 @@
  "ij" 'insert-line-below		;; I
  "ik" 'insert-line-above
  "jc" 'evil-avy-goto-char		;; J
- "jh" 'avy-org-goto-heading-timer
  "jl" 'evil-avy-goto-line
  "jt" 'evil-avy-goto-char-timer
  "jw" 'evil-avy-goto-word-1
+ "oa" 'org-agenda			;; O
+ "ol" 'org-agenda-list
+ "oc" 'org-capture
  "pa" 'package-autoremove		;; P
  "pd" 'package-delete
  "pi" 'package-install
@@ -187,6 +192,7 @@
  "qq" 'save-buffers-kill-terminal	;; Q
  "sa" 'counsel-ag			;; S
  "sl" 'counsel-locate
+ "so" 'counsel-outline
  "ss" 'swiper
  "ti" 'org-toggle-inline-images		;; T
  "tl" 'visual-line-mode
@@ -203,6 +209,15 @@
  "wk" 'evil-window-up
  "wl" 'evil-window-right
  "y" 'counsel-yank-pop)			;; Y
+;; Special key just for some modes
+(evil-leader/set-key-for-mode 'org-mode
+  "jh" 'counsel-org-goto
+  "oed" 'org-export-dispatch
+  "oeh" 'org-html-export-to-html
+  "oeo" 'org-odt-export-to-odt
+  "oem" 'org-md-export-to-markdown
+  "oil" 'org-insert-link
+)
 
 ;;------------------------------------------------------------------------
 ;; IVY
