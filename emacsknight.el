@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -164,6 +164,9 @@
  "<SPC>" 'counsel-M-x
  "ag" 'gnus                             ;; A
  "ad" 'deft
+ "ata" 'google-translate-at-point
+ "atq" 'google-translate-query-translate
+ "atQ" 'google-translate-query-translate-reverse
  "bb" 'ivy-switch-buffer		;; B
  "bd" 'kill-this-buffer
  "cb" 'comment-box			;; C
@@ -307,6 +310,14 @@
       deft-text-mode 'org-mode
       deft-use-filename-as-title t
       deft-use-filter-string-for-filename t)
+
+;;------------------------------------------------------------------------
+;; GOOGLE-TRANSLATE
+;;------------------------------------------------------------------------
+(require 'google-translate)
+(require 'google-translate-default-ui)
+(setq google-translate-default-source-language "en"
+      google-translate-default-target-language "id")
 
 ;;------------------------------------------------------------------------
 ;; DIRED

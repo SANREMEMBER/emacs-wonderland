@@ -83,6 +83,8 @@
     CLOSED: [2017-10-19 Kam 19:17]
 *** SUCCESS Use Deft for my personal wiki
     CLOSED: [2017-10-20 Jum 04:57]
+*** SUCCESS Improve skill to translate something
+    CLOSED: [2017-10-20 Jum 05:08]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -112,13 +114,12 @@
     - [ ] Z
 *** TODO Improve Diminish power
 *** TODO Org Publish and Org Capture skill
-*** TODO Improve skill to translate something
 *** NEXT Get power of completion
+
+*** NEXT Create ability to publish project
 *** NEXT Improve language ability of aspell
 *** SOMEDAY Beat the Hydra
 
 *** SOMEDAY Try to use tiny menu
-
-*** SOMEDAY Create ability to publish project
 
 *** SOMEDAY Switch Evil with God
