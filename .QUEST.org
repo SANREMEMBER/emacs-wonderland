@@ -60,6 +60,10 @@
    CLOSED: [2017-10-19 Kam 05:24]
 ** SUCCESS Clear Dired details
    CLOSED: [2017-10-19 Kam 06:12]
+** SUCCESS Clear mind of the knight
+   CLOSED: [2017-10-19 Kam 09:21]
+** SUCCESS Learn how to learn
+   CLOSED: [2017-10-19 Kam 09:21]
 ** TODO Train the leader of Evil [46%]
    - [ ] A 
    - [X] B for buffers
@@ -93,8 +97,6 @@
 ** TODO Train Evil to use org
 ** NEXT Teach helm to describe function
 ** NEXT Get power of completion
-** NEXT Learn how to learn
-** NEXT Clear mind of the knight
 ** SOMEDAY Switch Helm with Ivy weapon
 ** SOMEDAY Improve language ability of aspell
 
