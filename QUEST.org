@@ -71,6 +71,9 @@
 
 ** SUCCESS Beyond the Thunderbird, send mail with Gnus
    CLOSED: [2017-10-19 Kam 17:29]
+
+** SUCCESS All the icons for Gnus for new performance
+   CLOSED: [2017-10-19 Kam 18:01]
 ** TODO Train the leader of Evil [53%]
    - [ ] A 
    - [X] B for buffers
@@ -110,8 +113,6 @@
 ** SOMEDAY Beat the Hydra
 
 ** SOMEDAY Try to use tiny menu
-
-** SOMEDAY All the icons for Gnus for new performance
 ** SOMEDAY Improve skill to translate something
 
 ** SOMEDAY Create ability to publish project

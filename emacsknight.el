@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -161,6 +161,7 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
+ "ag" 'gnus                             ;; A
  "bb" 'ivy-switch-buffer		;; B
  "bd" 'kill-this-buffer
  "cb" 'comment-box			;; C
@@ -279,6 +280,15 @@
 (setq nnml-directory "~/Documents/Mail")
 (setq message-directory "~/Documents/Mail")
 (setq gnus-directory "~/Documents/Mail")
+;; Use tree view
+(add-hook 'gnus-group-mode-hook 'gnus-topic-mode)
+;; Sort by recent date
+(setq gnus-thread-sort-functions
+      '(gnus-thread-sort-by-most-recent-date
+        (not gnus-thread-sort-by-number)))
+;; ALL-THE-ICONS-GNUS-----------------------------------------------------
+(require 'all-the-icons-gnus)
+(all-the-icons-gnus-setup)
 
 ;;------------------------------------------------------------------------
 ;; DIRED
