@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -163,6 +163,7 @@
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
  "ag" 'gnus                             ;; A
+ "ad" 'deft
  "bb" 'ivy-switch-buffer		;; B
  "bd" 'kill-this-buffer
  "cb" 'comment-box			;; C
@@ -296,6 +297,16 @@
 ;; ALL-THE-ICONS-GNUS-----------------------------------------------------
 (require 'all-the-icons-gnus)
 (all-the-icons-gnus-setup)
+
+;;------------------------------------------------------------------------
+;; DEFT
+;;------------------------------------------------------------------------
+(require 'deft)
+(setq deft-directory "~/Nextcloud/Org/Serbaneka"
+      deft-extensions '("org" "md" "txt")
+      deft-text-mode 'org-mode
+      deft-use-filename-as-title t
+      deft-use-filter-string-for-filename t)
 
 ;;------------------------------------------------------------------------
 ;; DIRED

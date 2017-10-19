@@ -81,8 +81,10 @@
     - [X] Smex
 *** CANCEL Teach helm to describe function
     CLOSED: [2017-10-19 Kam 19:17]
-*** TODO Train the leader of Evil [53%]
-    - [ ] A 
+*** SUCCESS Use Deft for my personal wiki
+    CLOSED: [2017-10-20 Jum 04:57]
+*** TODO Train the leader of Evil [57%]
+    - [X] A fot applications
     - [X] B for buffers
     - [ ] C
     - [ ] D
@@ -110,7 +112,6 @@
     - [ ] Z
 *** TODO Improve Diminish power
 *** TODO Org Publish and Org Capture skill
-*** TODO Use Deft for my personal wiki
 *** TODO Improve skill to translate something
 *** NEXT Get power of completion
 *** NEXT Improve language ability of aspell
