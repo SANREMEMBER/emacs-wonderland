@@ -1,5 +1,3 @@
-(package-initialize)
-
 ;;------------------------------------------------------------------------
 ;; PERSONAL INFORMATION
 ;;------------------------------------------------------------------------
@@ -66,7 +64,7 @@
   )
 ;; nil to display full dir
 (setq airline-display-directory nil)
-;; ;; Diminish power
+;; Diminish power
 (require 'diminish)
 (when (require 'diminish nil 'noerror)
   (eval-after-load "evil-escape"
@@ -79,17 +77,14 @@
 ;;------------------------------------------------------------------------
 ;; ORG-MODE
 ;;------------------------------------------------------------------------
-;; Just italic, thanks!
-(setq org-hide-emphasis-markers t)
+(setq org-hide-emphasis-markers t ;; Just italic
+      org-ellipsis "  " ;; More cool ellipsis
+      org-log-done 'time ;; Closing timestap
+      org-image-actual-width 666 ;; Widt size for inline images
+      )
 ;; Better header bullets
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-;; More fancy ellipsis
-(setq org-ellipsis "  ")
-;; Closing timestamp
-(setq org-log-done 'time)
-;; Deactivated for inline images
-(setq org-image-actual-width 666)
 ;; Real bullets
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*]\\) "
@@ -104,9 +99,9 @@
 (require 'evil-magit)
 ;; Escape with jk
 (evil-escape-mode 1)
-(setq-default
- evil-escape-key-sequence "jk"
- evil-escape-unordered-key-sequence "true"
+(setq-default evil-escape-key-sequence "jk"
+	      evil-escape-key-sequence "JK"
+	      evil-escape-unordered-key-sequence "true"
  )
 ;; Evil respect org tab in terminal
 (add-hook 'org-mode-hook
