@@ -87,6 +87,14 @@
     CLOSED: [2017-10-20 Jum 05:08]
 *** SUCCESS Org Publish and Org Capture skill
     CLOSED: [2017-10-20 Jum 15:25]
+
+*** SUCCESS Create ability to publish project
+    CLOSED: [2017-10-20 Jum 15:40]
+
+*** CANCEL Switch Evil with God
+    CLOSED: [2017-10-20 Jum 15:40]
+*** SUCCESS Improve language ability of aspell
+    CLOSED: [2017-10-20 Jum 16:00]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -116,11 +124,6 @@
     - [ ] Z
 *** TODO Improve Diminish power
 *** NEXT Get power of completion
-
-*** NEXT Create ability to publish project
-*** NEXT Improve language ability of aspell
 *** SOMEDAY Beat the Hydra
 
 *** SOMEDAY Try to use tiny menu
-
-*** SOMEDAY Switch Evil with God
