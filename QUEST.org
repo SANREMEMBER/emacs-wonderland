@@ -85,6 +85,8 @@
     CLOSED: [2017-10-20 Jum 04:57]
 *** SUCCESS Improve skill to translate something
     CLOSED: [2017-10-20 Jum 05:08]
+*** SUCCESS Org Publish and Org Capture skill
+    CLOSED: [2017-10-20 Jum 15:25]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -113,7 +115,6 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** TODO Org Publish and Org Capture skill
 *** NEXT Get power of completion
 
 *** NEXT Create ability to publish project

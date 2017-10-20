@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -136,6 +136,99 @@
 ;; ORG-BULLETS------------------------------------------------------------
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; ORG-CAPTURE------------------------------------------------------------
+(setq org-capture-templates
+      '(
+	("j" "Capture journal"
+	 entry (file+datetree "/home/sanremember/Nextcloud/Org/Jurnal/1439.org")
+	 "* %?"
+	 :empty-lines 1)
+	("u" "Capture quote"
+	 entry (file+headline "/home/sanremember/Nextcloud/Org/Serbaneka/Kutipan.org" "Daftar Kutipan Pilihan")
+	 "** %^{Description}\n   :LOGBOOK:\n   %U\n   :END:\n   #+BEGIN_QUOTE\n   %?\n   #+END_QUOTE"
+	 :empty-lines 1)
+	))
+
+;; ORG-PUBLISH-------------------------------------------------------------
+(require 'htmlize)
+(require 'ox-publish)
+(setq org-publish-project-alist
+      '(
+	("private"
+	 :base-directory "~/Nextcloud/Org/"
+	 :base-extension "org"
+	 :publishing-directory "~/Nextcloud/WWW/"
+	 :recursive t
+	 :publishing-function org-html-publish-to-html
+
+	 :html-doctype "html5"
+	 :html-html5-fancy t
+	 :html-head-include-scripts nil
+	 :html-head-include-default-style nil
+	 :html-head "
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+<link href=\"file:///home/sanremember/Nextcloud/Org/Item/style.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link href=\"file:///home/sanremember/Nextcloud/Org/Item/extra.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link rel=\"shortcut icon\" href=\"file:///home/sanremember/Nextcloud/Org/Item/sanremember-circle.png\">
+<script src=\"file:///home/sanremember/Nextcloud/Org/Item/script.js\"></script> 
+"
+
+	 :with-toc nil
+	 :section-numbers nil
+	 :html-postamble nil
+	 :html-preamble nil
+	 :headline-levels 4
+
+	 :author "Hasannudin Amin"
+	 :email "sanremember@protonmail.com"
+
+	 :auto-sitemap t
+	 :sitemap-filename "Indeks.org"
+	 :sitemap-title "Indeks - SANREMEMBER"
+	 :sitemap-sort-files anti-chronologically)
+
+	("pages"
+	 :base-directory "~/Documents/Pages/org"
+	 :base-extension "org"
+	 :publishing-directory "~/Documents/Pages"
+	 :recursive t
+	 :publishing-function org-html-publish-to-html
+
+	 :html-doctype "html5"
+	 :html-html5-fancy t
+	 :html-head-include-scripts nil
+	 :html-head-include-default-style nil
+	 :html-head "
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+<link href=\"asset/style.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link href=\"asset/extra.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link href=\"asset/font.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link rel=\"shortcut icon\" href=\"asset/sanremember-circle.png\">
+<script src=\"asset/script.js\"></script> 
+"
+
+	 :with-toc nil
+	 :section-numbers nil
+	 :html-postamble nil
+	 :html-preamble nil
+	 :headline-levels 4
+
+	 :author "Hasannudin Amin"
+	 :email "sanremember@protonmail.com"
+
+	 :auto-sitemap t
+	 :sitemap-filename "index.org"
+	 :sitemap-title "Indeks - SANREMEMBER"
+	 :sitemap-sort-files anti-chronologically)
+
+	("media"
+	 :base-directory "~/Nextcloud/Org/"
+	 :base-extension "css\\|js\\|png\\|jpg\\|svg\\|gif"
+	 :publishing-directory "~/Nextcloud/WWW/"
+	 :recursive t
+	 :publishing-function org-publish-attachment)
+
+	("craft" :components ("htmlfly" "media"))))
 
 ;;------------------------------------------------------------------------
 ;; EVIL-MODE
