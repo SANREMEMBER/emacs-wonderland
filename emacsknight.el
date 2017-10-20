@@ -239,7 +239,7 @@
 ;; EVIL-MODE
 ;;------------------------------------------------------------------------
 (require 'evil)
-;; evil no abbrev again
+;; Evil no abbrev again
 (setq evil-want-abbrev-expand-on-insert-exit nil)
 (evil-mode 1)
 ;; Evil respect org tab in terminal
@@ -247,7 +247,9 @@
 	  (lambda ()
 	    (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
 	    (define-key evil-normal-state-map (kbd "RET") 'org-open-at-point))) 
-;; evil special key
+;; Default state for some modes
+(setq evil-insert-state-modes '(deft-mode))
+;; Evil special key
 (define-key evil-normal-state-map (kbd "SPC TAB") 'evil-switch-to-windows-last-buffer)
 ;; EVIL-MAGIT-------------------------------------------------------------
 (require 'evil-magit)
