@@ -413,6 +413,14 @@
       google-translate-default-target-language "id")
 
 ;;------------------------------------------------------------------------
+;; ISPELL
+;;------------------------------------------------------------------------
+(cond
+ ((executable-find "aspell")
+  (setq ispell-program-name "aspell")
+  (setq ispell-extra-args '("--sug-mode=ultra" "--lang=id"))))
+
+;;------------------------------------------------------------------------
 ;; DIRED
 ;;------------------------------------------------------------------------
 ;; Hide details
@@ -445,6 +453,18 @@
   (save-excursion
     (end-of-line 0)
     (open-line 1)))
+
+;;------------------------------------------------------------------------
+;; ISPELL SKIP FOR ORG FUNCTION
+;;------------------------------------------------------------------------
+(defun ispell-skip-for-org ()
+  "Configure ispell-skip-region-alist for org-mode."
+  (make-local-variable 'ispell-skip-region-alist)
+  (add-to-list 'ispell-skip-region-alist '(org-property-drawer-re))
+  (add-to-list 'ispell-skip-region-alist '("~" "~"))
+  (add-to-list 'ispell-skip-region-alist '("=" "="))
+  (add-to-list 'ispell-skip-region-alist '("^#\\+BEGIN_SRC" . "^#\\+END_SRC")))
+(add-hook 'org-mode-hook #'ispell-skip-for-org)
 
 ;;------------------------------------------------------------------------
 ;; AUTO MOVE NEW WINDOW ADVISING FUNCTION
