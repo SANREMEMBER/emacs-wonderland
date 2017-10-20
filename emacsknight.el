@@ -138,6 +138,8 @@
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;; ORG-AGENDA-------------------------------------------------------------
 (setq org-agenda-files (list "~/Documents/Projects/Kontrol Versi ODF/TODO.org"))
+;; (add-to-list 'org-agenda-files "~/blahblahblah.org" 'append)
+
 
 ;; ORG-CAPTURE------------------------------------------------------------
 (setq org-capture-templates
