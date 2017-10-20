@@ -124,6 +124,8 @@
     - [ ] Z
 *** TODO Improve Diminish power
 *** NEXT Get power of completion
-*** SOMEDAY Beat the Hydra
+*** NEXT Beat the Hydra
 
 *** SOMEDAY Try to use tiny menu
+
+*** SOMEDAY Use use-package to manage packages

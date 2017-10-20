@@ -407,6 +407,13 @@
 (setq gnus-thread-sort-functions
       '(gnus-thread-sort-by-most-recent-date
         (not gnus-thread-sort-by-number)))
+;; Set visibile header
+(setq gnus-visible-headers
+"^From:\\|^Reply-To\\|^Organization:\\|^To:\\|^Cc:\\|^Newsgroups:\\|^Subject:\\|^Date:\\|^Gnus")
+;; Sort visible header
+ (setq gnus-sorted-header-list
+            '("^From:" "^Reply-To" "^Organization:" "^To:" "^Cc:" "^Newsgroups:"
+"^Subject:" "^Date:" "^Gnus"))
 ;; ALL-THE-ICONS-GNUS-----------------------------------------------------
 (require 'all-the-icons-gnus)
 (all-the-icons-gnus-setup)
@@ -482,6 +489,19 @@
   (add-to-list 'ispell-skip-region-alist '("=" "="))
   (add-to-list 'ispell-skip-region-alist '("^#\\+BEGIN_SRC" . "^#\\+END_SRC")))
 (add-hook 'org-mode-hook #'ispell-skip-for-org)
+
+;;------------------------------------------------------------------------
+;; ORG ARROW FILTER TIMESTAMPS
+;;------------------------------------------------------------------------
+(add-to-list 'org-export-filter-timestamp-functions
+             #'org-arrow-filter-timestamps)
+(defun org-arrow-filter-timestamps (trans back _comm)
+  "Remove <> around time-stamps."
+  (pcase back
+    ((or `jekyll `html)
+     (replace-regexp-in-string "&[lg]t;" "" trans))
+    (`latex
+     (replace-regexp-in-string "[<>]" "" trans))))
 
 ;;------------------------------------------------------------------------
 ;; AUTO MOVE NEW WINDOW ADVISING FUNCTION
