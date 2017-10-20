@@ -498,7 +498,7 @@
 (defun org-arrow-filter-timestamps (trans back _comm)
   "Remove <> around time-stamps."
   (pcase back
-    ((or `jekyll `html)
+    ((or `odt `html)
      (replace-regexp-in-string "&[lg]t;" "" trans))
     (`latex
      (replace-regexp-in-string "[<>]" "" trans))))
