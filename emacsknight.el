@@ -319,6 +319,8 @@
   "jh" 'counsel-org-goto
   "oed" 'org-export-dispatch
   "oeh" 'org-html-export-to-html
+  "oes" 'org-edit-special
+  "oec" 'org-edit-src-exit
   "oeo" 'org-odt-export-to-odt
   "oem" 'org-md-export-to-markdown
   "oib" 'org-tree-to-indirect-buffer
@@ -359,9 +361,6 @@
 ;;------------------------------------------------------------------------
 ;; GNUS
 ;;------------------------------------------------------------------------
-;; User Info
-(setq user-mail-address "hasannudinamin@gmail.com"
-      user-full-name "Hasannudin Amin")
 ;; Nil method
 (setq gnus-select-method '(nnnil))
 ;; Get email, and store in nnml
