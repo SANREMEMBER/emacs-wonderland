@@ -137,7 +137,7 @@
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;; ORG-AGENDA-------------------------------------------------------------
-  (setq org-agenda-files (list "~/Documents/Projects/Kontrol Versi ODF/TODO.org"))
+(setq org-agenda-files (list "~/Documents/Projects/Kontrol Versi ODF/TODO.org"))
 
 ;; ORG-CAPTURE------------------------------------------------------------
 (setq org-capture-templates
@@ -491,6 +491,9 @@
 
 ;; No times for yes
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; Load secret weapon
+(load-file "~/.secretweapon.el")
 
 ;;------------------------------------------------------------------------
 ;; SAVE-PLACE
