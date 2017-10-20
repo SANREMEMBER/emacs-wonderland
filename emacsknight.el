@@ -258,8 +258,8 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
- "ag" 'gnus                             ;; A
- "ad" 'deft
+ "ad" 'deft                              ;; A
+ "am" 'gnus
  "ata" 'google-translate-at-point
  "atq" 'google-translate-query-translate
  "atQ" 'google-translate-query-translate-reverse
