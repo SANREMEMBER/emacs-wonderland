@@ -286,8 +286,7 @@
  "bd"	 'kill-this-buffer
  "cb"	 'comment-box			;; C
  "cl"	 'comment-line
- "ec"	 'save-buffers-kill-terminal    ;; E
- "ed"	 'find-emacs-dir
+ "ed"	 'find-emacs-dir                ;; E
  "ei"	 'find-emacs-init
  "el"	 'counsel-find-library
  "et"	 'counsel-load-theme
@@ -296,7 +295,7 @@
  "epi"	 'package-install
  "epr"	 'package-refresh-contents
  "epl"	 'package-list-packages
- "eq"	 'find-emacs-quest
+ "eq"	 'save-buffers-kill-terminal
  "ff"	 'counsel-find-file		;; F
  "fn"	 'neotree
  "fr"	 'counsel-recentf
@@ -376,7 +375,6 @@
     (concat pf "cb")	"box"
     (concat pf "cl")	"line"
     (concat pf "e")	"emacs"		;; E
-    (concat pf "ec")	"close"
     (concat pf "ed")	"directory"
     (concat pf "ei")	"init file"
     (concat pf "el")	"library"
@@ -386,7 +384,7 @@
     (concat pf "epi")	"install"
     (concat pf "epr")	"refresh"
     (concat pf "epl")	"list"
-    (concat pf "eq")	"quest"
+    (concat pf "eq")	"quit"
     (concat pf "et")	"themes"
     (concat pf "f")	"file"		;; F
     (concat pf "ff")	" find"
@@ -626,11 +624,6 @@
   "Open emacs directory in the current window."
   (interactive)
   (find-file user-emacs-directory))
-
-(defun find-emacs-quest ()
-  "Open emacs quest in the current window."
-  (interactive)
-  (find-file "~/.emacs-wonderland/QUEST.org"))
 
 ;;------------------------------------------------------------------------
 ;; AUTO MOVE NEW WINDOW ADVISING FUNCTION
