@@ -114,6 +114,8 @@
 ;; DIMINISH---------------------------------------------------------------
 (require 'diminish)
 (when (require 'diminish nil 'noerror)
+  (eval-after-load "all-the-icons-dired"
+    '(diminish 'all-the-icons-dired-mode))
   (eval-after-load "autorevert"
     '(diminish 'auto-revert-mode))
   (eval-after-load "evil-escape"
@@ -282,6 +284,13 @@
  "bd" 'kill-this-buffer
  "cb" 'comment-box			;; C
  "cl" 'comment-line
+ "et" 'counsel-load-theme               ;; E
+ "epa" 'package-autoremove
+ "epd" 'package-delete
+ "epi" 'package-install
+ "epr" 'package-refresh-contents
+ "epl" 'package-list-packages
+ "eq" 'save-buffers-kill-terminal	
  "ff" 'counsel-find-file		;; F
  "fl" 'counsel-find-library
  "fn" 'neotree
@@ -304,12 +313,6 @@
  "ol" 'org-agenda-list
  "oc" 'org-capture
  "op" 'org-publish
- "pa" 'package-autoremove		;; P
- "pd" 'package-delete
- "pi" 'package-install
- "pr" 'package-refresh-contents
- "pl" 'package-list-packages
- "qq" 'save-buffers-kill-terminal	;; Q
  "sa" 'counsel-ag			;; S
  "sl" 'counsel-locate
  "so" 'counsel-outline
@@ -359,6 +362,9 @@
     (concat pf "at") "translate"
     (concat pf "b") "buffer"
     (concat pf "c") "comment"
+    (concat pf "e") "emacs"
+    (concat pf "ep") "package"
+    (concat pf "eq") "quit"
     (concat pf "f") "file"
     (concat pf "g") "git"
     (concat pf "h") "help"
@@ -369,8 +375,6 @@
     (concat pf "oe") "export"
     (concat pf "oi") "insert"
     (concat pf "os") "set"
-    (concat pf "p") "packages"
-    (concat pf "q") "quit"
     (concat pf "s") "search"
     (concat pf "t") "toggle"
     (concat pf "u") "undo"
