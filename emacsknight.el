@@ -124,8 +124,10 @@
     '(diminish 'ivy-mode))
   (eval-after-load "undo-tree"
     '(diminish 'undo-tree-mode))
-   (eval-after-load "simple"
-    '(diminish 'visual-line-mode "W")))
+  (eval-after-load "simple"
+    '(diminish 'visual-line-mode "W"))
+  (eval-after-load "which-key"
+    '(diminish 'which-key-mode)))
 
 
 
@@ -317,7 +319,8 @@
  "sl"	 'counsel-locate
  "so"	 'counsel-outline
  "ss"	 'swiper
- "tl"	 'visual-line-mode              ;; T
+ "tln"	 'linum-mode                    ;; T
+ "tlw"	 'visual-line-mode
  "tm"	 'toggle-frame-maximized
  "tn"	 'neotree-toggle
  "tb"	 'menu-bar-mode
@@ -426,7 +429,9 @@
     (concat pf "ss")	"swiper"
     (concat pf "t")	"toggle"	;; T
     (concat pf "ti")	"images"
-    (concat pf "tl")	"line wrap"
+    (concat pf "tl")	"line"
+    (concat pf "tln")	"number"
+    (concat pf "tlw")	"wrap"
     (concat pf "tm")	"maximize"
     (concat pf "tn")	"neotree"
     (concat pf "tb")	"bar"
