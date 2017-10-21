@@ -137,3 +137,5 @@
 *** SOMEDAY Try to use tiny menu
 
 *** SOMEDAY Use use-package to manage packages
+
+*** SOMEDAY Evil leader organise term in key
