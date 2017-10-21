@@ -95,6 +95,8 @@
     CLOSED: [2017-10-20 Jum 15:40]
 *** SUCCESS Improve language ability of aspell
     CLOSED: [2017-10-20 Jum 16:00]
+*** SUCCESS Use wich-key
+    CLOSED: [2017-10-21 Sab 10:13]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -125,7 +127,8 @@
 *** TODO Improve Diminish power
 *** NEXT Get power of completion
 *** NEXT Beat the Hydra
-
+*** SOMEDAY Org with reveal power
+*** SOMEDAY Org with twitter bootstrap power
 *** SOMEDAY Try to use tiny menu
 
 *** SOMEDAY Use use-package to manage packages
