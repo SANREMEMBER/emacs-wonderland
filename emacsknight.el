@@ -275,76 +275,76 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
- "ad" 'deft                              ;; A
- "am" 'gnus
- "ata" 'google-translate-at-point
- "atq" 'google-translate-query-translate
- "atQ" 'google-translate-query-translate-reverse
- "bb" 'ivy-switch-buffer		;; B
- "bd" 'kill-this-buffer
- "cb" 'comment-box			;; C
- "cl" 'comment-line
- "et" 'counsel-load-theme               ;; E
- "epa" 'package-autoremove
- "epd" 'package-delete
- "epi" 'package-install
- "epr" 'package-refresh-contents
- "epl" 'package-list-packages
- "eq" 'save-buffers-kill-terminal	
- "ff" 'counsel-find-file		;; F
- "fl" 'counsel-find-library
- "fn" 'neotree
- "fr" 'counsel-recentf
- "fs" 'save-buffer
- "gs" 'magit-status			;; G
- "gl" 'magit-log-all
- "gp" 'magit-push
- "hdb" 'counsel-descbinds		;; H
- "hdf" 'counsel-describe-function
- "hdk" 'describe-key
- "hdv" 'counsel-describe-variable
- "ij" 'insert-line-below		;; I
- "ik" 'insert-line-above
- "jc" 'evil-avy-goto-char		;; J
- "jl" 'evil-avy-goto-line
- "jt" 'evil-avy-goto-char-timer
- "jw" 'evil-avy-goto-word-1
- "oa" 'org-agenda			;; O
- "ol" 'org-agenda-list
- "oc" 'org-capture
- "op" 'org-publish
- "sa" 'counsel-ag			;; S
- "sl" 'counsel-locate
- "so" 'counsel-outline
- "ss" 'swiper
- "ti" 'org-toggle-inline-images		;; T
- "tl" 'visual-line-mode
- "tm" 'toggle-frame-maximized
- "tn" 'neotree-toggle
- "tb" 'menu-bar-mode
- "u" 'undo-tree-visualize		;; U
- "w-" 'split-window-below		;; W
- "w/" 'split-window-right
- "wd" 'delete-window
- "wD" 'delete-other-windows
- "wh" 'evil-window-left
- "wj" 'evil-window-down
- "wk" 'evil-window-up
- "wl" 'evil-window-right
- "y" 'counsel-yank-pop)			;; Y
+ "ad"	 'deft                          ;; A
+ "am"	 'gnus
+ "ata"	 'google-translate-at-point
+ "atq"	 'google-translate-query-translate
+ "atQ"	 'google-translate-query-translate-reverse
+ "bb"	 'ivy-switch-buffer		;; B
+ "bd"	 'kill-this-buffer
+ "cb"	 'comment-box			;; C
+ "cl"	 'comment-line
+ "el"	 'counsel-find-library          ;; E
+ "et"	 'counsel-load-theme
+ "epa"	 'package-autoremove
+ "epd"	 'package-delete
+ "epi"	 'package-install
+ "epr"	 'package-refresh-contents
+ "epl"	 'package-list-packages
+ "eq"	 'save-buffers-kill-terminal
+ "ff"	 'counsel-find-file		;; F
+ "fn"	 'neotree
+ "fr"	 'counsel-recentf
+ "fs"	 'save-buffer
+ "gs"	 'magit-status			;; G
+ "gl"	 'magit-log-all
+ "gp"	 'magit-push
+ "hb"	 'counsel-descbinds		;; H
+ "hf"	 'counsel-describe-function
+ "hk"	 'describe-key
+ "hv"	 'counsel-describe-variable
+ "ij"	 'insert-line-below		;; I
+ "ik"	 'insert-line-above
+ "jc"	 'evil-avy-goto-char		;; J
+ "jl"	 'evil-avy-goto-line
+ "jt"	 'evil-avy-goto-char-timer
+ "jw"	 'evil-avy-goto-word-1
+ "oa"	 'org-agenda			;; O
+ "ol"	 'org-agenda-list
+ "oc"	 'org-capture
+ "op"	 'org-publish
+ "sa"	 'counsel-ag			;; S
+ "sl"	 'counsel-locate
+ "so"	 'counsel-outline
+ "ss"	 'swiper
+ "tl"	 'visual-line-mode              ;; T
+ "tm"	 'toggle-frame-maximized
+ "tn"	 'neotree-toggle
+ "tb"	 'menu-bar-mode
+ "u"	 'undo-tree-visualize		;; U
+ "w-"	 'split-window-below		;; W
+ "w/"	 'split-window-right
+ "wd"	 'delete-window
+ "wD"	 'delete-other-windows
+ "wh"	 'evil-window-left
+ "wj"	 'evil-window-down
+ "wk"	 'evil-window-up
+ "wl"	 'evil-window-right
+ "y"	 'counsel-yank-pop)		;; Y
 ;; Special key just for some modes
 (evil-leader/set-key-for-mode 'org-mode
-  "jh" 'counsel-org-goto
+  "jh"	'counsel-org-goto
   "oed" 'org-export-dispatch
   "oeh" 'org-html-export-to-html
-  "oes" 'org-edit-special
-  "oec" 'org-edit-src-exit
+  "ose" 'org-edit-special
+  "osc" 'org-edit-src-exit
   "oeo" 'org-odt-export-to-odt
   "oem" 'org-md-export-to-markdown
-  "ot" 'org-tree-to-indirect-buffer
+  "ob"	'org-tree-to-indirect-buffer
   "oil" 'org-insert-link
   "oit" 'org-time-stamp
-  "ost" 'org-set-tags
+  "ot" 'org-set-tags
+  "ti" 'org-toggle-inline-images
 )
 
 ;;------------------------------------------------------------------------
@@ -360,25 +360,86 @@
     (concat pf "TAB") "last buffer"
     (concat pf "a") "apps"
     (concat pf "at") "translate"
+    (concat pf "ata") "at point"
+    (concat pf "atq") "query"
+    (concat pf "atQ") "query reverse"
     (concat pf "b") "buffer"
+    (concat pf "bb") "buffers"
+    (concat pf "bd") "delete"
     (concat pf "c") "comment"
+    (concat pf "cb") "box"
+    (concat pf "cl") "line"
     (concat pf "e") "emacs"
+    (concat pf "el") "library"
     (concat pf "ep") "package"
+    (concat pf "epa") "autoremove"
+    (concat pf "epd") "delete"
+    (concat pf "epi") "install"
+    (concat pf "epr") "refresh"
+    (concat pf "epl") "list"
     (concat pf "eq") "quit"
+    (concat pf "et") "themes"
     (concat pf "f") "file"
+    (concat pf "ff") " find"
+    (concat pf "fr") "recent"
+    (concat pf "fs") "save"
     (concat pf "g") "git"
+    (concat pf "gs") "status"
+    (concat pf "gl") "log"
+    (concat pf "gp") "push"
     (concat pf "h") "help"
-    (concat pf "hd") "describe"
+    (concat pf "hb") "binding"
+    (concat pf "hf") "function"
+    (concat pf "hk") "key"
+    (concat pf "hv") "variable"
     (concat pf "i") "insert"
+    (concat pf "ij") "below"
+    (concat pf "ik") "above"
     (concat pf "j") "jump"
+    (concat pf "jc") "char"
+    (concat pf "jh") "heading"
+    (concat pf "jl") "line"
+    (concat pf "jt") "timer"
+    (concat pf "jw") "word"
     (concat pf "o") "org"
+    (concat pf "oa") "agenda"
+    (concat pf "ol") "list agenda"
+    (concat pf "ob") "buffer"
+    (concat pf "oc") "capture"
     (concat pf "oe") "export"
+    (concat pf "oed") "dispatch"
+    (concat pf "oeh") "html"
+    (concat pf "oeo") "odt"
+    (concat pf "oem") "markdown"
     (concat pf "oi") "insert"
-    (concat pf "os") "set"
+    (concat pf "oil") "link"
+    (concat pf "oit") "time"
+    (concat pf "os") "source"
+    (concat pf "ose") "edit"
+    (concat pf "osc") "close"
+    (concat pf "op") "publish"
+    (concat pf "ot") "tags"
     (concat pf "s") "search"
+    (concat pf "sa") "ag"
+    (concat pf "sl") "locate"
+    (concat pf "so") "outline"
+    (concat pf "ss") "swiper"
     (concat pf "t") "toggle"
+    (concat pf "ti") "images"
+    (concat pf "tl") "line wrap"
+    (concat pf "tm") "maximize"
+    (concat pf "tn") "neotree"
+    (concat pf "tb") "bar"
     (concat pf "u") "undo"
     (concat pf "w") "window"
+    (concat pf "w-") "horizontal"
+    (concat pf "w/") "vertical"
+    (concat pf "wd") "delete"
+    (concat pf "wD") "delete others"
+    (concat pf "wh") "left"
+    (concat pf "wj") "down"
+    (concat pf "wk") "up"
+    (concat pf "wl") "right"
     (concat pf "y") "yank"))
 
 ;;------------------------------------------------------------------------
