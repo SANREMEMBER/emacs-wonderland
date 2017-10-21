@@ -338,8 +338,9 @@
   "oec" 'org-edit-src-exit
   "oeo" 'org-odt-export-to-odt
   "oem" 'org-md-export-to-markdown
-  "oib" 'org-tree-to-indirect-buffer
+  "ot" 'org-tree-to-indirect-buffer
   "oil" 'org-insert-link
+  "oit" 'org-time-stamp
   "ost" 'org-set-tags
 )
 
@@ -352,8 +353,10 @@
 ;; declare prefix
 (dolist (pf '("SPC " "M-x "))
   (which-key-declare-prefixes
+    (concat pf "SPC") "M-x"
     (concat pf "TAB") "last buffer"
     (concat pf "a") "apps"
+    (concat pf "at") "translate"
     (concat pf "b") "buffer"
     (concat pf "c") "comment"
     (concat pf "f") "file"
@@ -363,10 +366,14 @@
     (concat pf "i") "insert"
     (concat pf "j") "jump"
     (concat pf "o") "org"
+    (concat pf "oe") "export"
+    (concat pf "oi") "insert"
+    (concat pf "os") "set"
     (concat pf "p") "packages"
     (concat pf "q") "quit"
     (concat pf "s") "search"
     (concat pf "t") "toggle"
+    (concat pf "u") "undo"
     (concat pf "w") "window"
     (concat pf "y") "yank"))
 
