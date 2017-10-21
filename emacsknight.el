@@ -94,10 +94,10 @@
 (require 'airline-themes)
 (load-theme 'airline-doom-one t)
 ;; nil on minibuffer
-  (custom-theme-set-faces
-   'airline-doom-one
-   `(minibuffer-prompt ((t (:foreground nil :background nil :inherit 'default))))
-  )
+(custom-theme-set-faces
+ 'airline-doom-one
+ `(minibuffer-prompt ((t (:foreground nil :background nil :inherit 'default))))
+ )
 ;; nil to display full dir
 (setq airline-display-directory nil)
 ;; Cure for icons in emacs
@@ -161,7 +161,7 @@
       '(
 	("j" "Capture journal"
 	 entry (file+datetree "/home/sanremember/Nextcloud/Org/Jurnal/1439.org")
-	 "* %?"
+	 "* %^{Description}\n  :LOGBOOK:\n  %U\n  :END:\n  %?"
 	 :empty-lines 1)
 	("u" "Capture quote"
 	 entry (file+headline "/home/sanremember/Nextcloud/Org/Serbaneka/Kutipan.org" "Daftar Kutipan Pilihan")
