@@ -344,6 +344,33 @@
 )
 
 ;;------------------------------------------------------------------------
+;; WHICH-KEY
+;;------------------------------------------------------------------------
+(which-key-mode 1)
+;; which key as minibuffer
+(which-key-setup-minibuffer)
+;; declare prefix
+(dolist (pf '("SPC " "M-x "))
+  (which-key-declare-prefixes
+    (concat pf "TAB") "last buffer"
+    (concat pf "a") "apps"
+    (concat pf "b") "buffer"
+    (concat pf "c") "comment"
+    (concat pf "f") "file"
+    (concat pf "g") "git"
+    (concat pf "h") "help"
+    (concat pf "hd") "describe"
+    (concat pf "i") "insert"
+    (concat pf "j") "jump"
+    (concat pf "o") "org"
+    (concat pf "p") "packages"
+    (concat pf "q") "quit"
+    (concat pf "s") "search"
+    (concat pf "t") "toggle"
+    (concat pf "w") "window"
+    (concat pf "y") "yank"))
+
+;;------------------------------------------------------------------------
 ;; IVY
 ;;------------------------------------------------------------------------
 (ivy-mode 1)
@@ -443,13 +470,6 @@
  ((executable-find "aspell")
   (setq ispell-program-name "aspell")
   (setq ispell-extra-args '("--sug-mode=ultra" "--lang=id"))))
-
-;;------------------------------------------------------------------------
-;; WHICH-KEY
-;;------------------------------------------------------------------------
-(which-key-mode 1)
-;; which key as minibuffer
-(which-key-setup-minibuffer)
 
 ;;------------------------------------------------------------------------
 ;; DIRED
