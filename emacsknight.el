@@ -334,17 +334,17 @@
 ;; Special key just for some modes
 (evil-leader/set-key-for-mode 'org-mode
   "jh"	'counsel-org-goto
+  "ob"	'org-tree-to-indirect-buffer
   "oed" 'org-export-dispatch
   "oeh" 'org-html-export-to-html
-  "ose" 'org-edit-special
-  "osc" 'org-edit-src-exit
-  "oeo" 'org-odt-export-to-odt
   "oem" 'org-md-export-to-markdown
-  "ob"	'org-tree-to-indirect-buffer
+  "oeo" 'org-odt-export-to-odt
   "oil" 'org-insert-link
   "oit" 'org-time-stamp
-  "ot" 'org-set-tags
-  "ti" 'org-toggle-inline-images
+  "ose" 'org-edit-special
+  "osc" 'org-edit-src-exit
+  "ot"	'org-set-tags
+  "ti"	'org-toggle-inline-images
 )
 
 ;;------------------------------------------------------------------------
@@ -356,91 +356,92 @@
 ;; declare prefix
 (dolist (pf '("SPC " "M-x "))
   (which-key-declare-prefixes
-    (concat pf "SPC") "M-x"
-    (concat pf "TAB") "last buffer"
-    (concat pf "a") "apps"
-    (concat pf "at") "translate"
-    (concat pf "ata") "at point"
-    (concat pf "atq") "query"
-    (concat pf "atQ") "query reverse"
-    (concat pf "b") "buffer"
-    (concat pf "bb") "buffers"
-    (concat pf "bd") "delete"
-    (concat pf "c") "comment"
-    (concat pf "cb") "box"
-    (concat pf "cl") "line"
-    (concat pf "e") "emacs"
-    (concat pf "el") "library"
-    (concat pf "ep") "package"
-    (concat pf "epa") "autoremove"
-    (concat pf "epd") "delete"
-    (concat pf "epi") "install"
-    (concat pf "epr") "refresh"
-    (concat pf "epl") "list"
-    (concat pf "eq") "quit"
-    (concat pf "et") "themes"
-    (concat pf "f") "file"
-    (concat pf "ff") " find"
-    (concat pf "fr") "recent"
-    (concat pf "fs") "save"
-    (concat pf "g") "git"
-    (concat pf "gs") "status"
-    (concat pf "gl") "log"
-    (concat pf "gp") "push"
-    (concat pf "h") "help"
-    (concat pf "hb") "binding"
-    (concat pf "hf") "function"
-    (concat pf "hk") "key"
-    (concat pf "hv") "variable"
-    (concat pf "i") "insert"
-    (concat pf "ij") "below"
-    (concat pf "ik") "above"
-    (concat pf "j") "jump"
-    (concat pf "jc") "char"
-    (concat pf "jh") "heading"
-    (concat pf "jl") "line"
-    (concat pf "jt") "timer"
-    (concat pf "jw") "word"
-    (concat pf "o") "org"
-    (concat pf "oa") "agenda"
-    (concat pf "ol") "list agenda"
-    (concat pf "ob") "buffer"
-    (concat pf "oc") "capture"
-    (concat pf "oe") "export"
-    (concat pf "oed") "dispatch"
-    (concat pf "oeh") "html"
-    (concat pf "oeo") "odt"
-    (concat pf "oem") "markdown"
-    (concat pf "oi") "insert"
-    (concat pf "oil") "link"
-    (concat pf "oit") "time"
-    (concat pf "os") "source"
-    (concat pf "ose") "edit"
-    (concat pf "osc") "close"
-    (concat pf "op") "publish"
-    (concat pf "ot") "tags"
-    (concat pf "s") "search"
-    (concat pf "sa") "ag"
-    (concat pf "sl") "locate"
-    (concat pf "so") "outline"
-    (concat pf "ss") "swiper"
-    (concat pf "t") "toggle"
-    (concat pf "ti") "images"
-    (concat pf "tl") "line wrap"
-    (concat pf "tm") "maximize"
-    (concat pf "tn") "neotree"
-    (concat pf "tb") "bar"
-    (concat pf "u") "undo"
-    (concat pf "w") "window"
-    (concat pf "w-") "horizontal"
-    (concat pf "w/") "vertical"
-    (concat pf "wd") "delete"
-    (concat pf "wD") "delete others"
-    (concat pf "wh") "left"
-    (concat pf "wj") "down"
-    (concat pf "wk") "up"
-    (concat pf "wl") "right"
-    (concat pf "y") "yank"))
+    (concat pf "SPC")	"M-x"
+    (concat pf "TAB")	"last buffer"
+    (concat pf "a")	"apps"		;; A
+    (concat pf "at")	"translate"
+    (concat pf "ata")	"at point"
+    (concat pf "atq")	"query"
+    (concat pf "atQ")	"query reverse"
+    (concat pf "b")	"buffer"	;; B
+    (concat pf "bb")	"buffers"
+    (concat pf "bd")	"delete"
+    (concat pf "c")	"comment"	;; C
+    (concat pf "cb")	"box"
+    (concat pf "cl")	"line"
+    (concat pf "e")	"emacs"		;; E
+    (concat pf "el")	"library"
+    (concat pf "ep")	"package"
+    (concat pf "epa")	"autoremove"
+    (concat pf "epd")	"delete"
+    (concat pf "epi")	"install"
+    (concat pf "epr")	"refresh"
+    (concat pf "epl")	"list"
+    (concat pf "eq")	"quit"
+    (concat pf "et")	"themes"
+    (concat pf "f")	"file"		;; F
+    (concat pf "ff")	" find"
+    (concat pf "fr")	"recent"
+    (concat pf "fs")	"save"
+    (concat pf "g")	"git"		;; G
+    (concat pf "gs")	"status"
+    (concat pf "gl")	"log"
+    (concat pf "gp")	"push"
+    (concat pf "h")	"help"		;; H
+    (concat pf "hb")	"binding"
+    (concat pf "hf")	"function"
+    (concat pf "hk")	"key"
+    (concat pf "hv")	"variable"
+    (concat pf "i")	"insert"	;; I
+    (concat pf "ij")	"below"
+    (concat pf "ik")	"above"
+    (concat pf "j")	"jump"		;; J
+    (concat pf "jc")	"char"
+    (concat pf "jh")	"heading"
+    (concat pf "jl")	"line"
+    (concat pf "jt")	"timer"
+    (concat pf "jw")	"word"
+    (concat pf "o")	"org"		;; O
+    (concat pf "oa")	"agenda"
+    (concat pf "oleh")	"list agenda"
+    (concat pf "ob")	"buffer"
+    (concat pf "oc")	"capture"
+    (concat pf "oe")	"export"
+    (concat pf "oed")	"dispatch"
+    (concat pf "oeh")	"html"
+    (concat pf "oeo")	"odt"
+    (concat pf "oem")	"markdown"
+    (concat pf "oi")	"insert"
+    (concat pf "oil")	"link"
+    (concat pf "oit")	"time"
+    (concat pf "os")	"source"
+    (concat pf "ose")	"edit"
+    (concat pf "osc")	"close"
+    (concat pf "op")	"publish"
+    (concat pf "ot")	"tags"
+    (concat pf "s")	"search"	;; S
+    (concat pf "sa")	"ag"
+    (concat pf "sl")	"locate"
+    (concat pf "so")	"outline"
+    (concat pf "ss")	"swiper"
+    (concat pf "t")	"toggle"	;; T
+    (concat pf "ti")	"images"
+    (concat pf "tl")	"line wrap"
+    (concat pf "tm")	"maximize"
+    (concat pf "tn")	"neotree"
+    (concat pf "tb")	"bar"
+    (concat pf "u")	"undo"		;; U
+    (concat pf "w")	"window"	;; W
+    (concat pf "w-")	"horizontal"
+    (concat pf "w/")	"vertical"
+    (concat pf "wd")	"delete"
+    (concat pf "wD")	"delete others"
+    (concat pf "wh")	"left"
+    (concat pf "wj")	"down"
+    (concat pf "wk")	"up"
+    (concat pf "wl")	"right"
+    (concat pf "y")	"yank"		;; Y
+    ))
 
 ;;------------------------------------------------------------------------
 ;; IVY
