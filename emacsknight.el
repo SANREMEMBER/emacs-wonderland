@@ -286,6 +286,8 @@
  "bd"	 'kill-this-buffer
  "cb"	 'comment-box			;; C
  "cl"	 'comment-line
+ "ed"	 'find-emacs-dir                ;; E
+ "ei"	 'find-emacs-init
  "el"	 'counsel-find-library          ;; E
  "et"	 'counsel-load-theme
  "epa"	 'package-autoremove
@@ -373,6 +375,8 @@
     (concat pf "cb")	"box"
     (concat pf "cl")	"line"
     (concat pf "e")	"emacs"		;; E
+    (concat pf "ed")	"directory"
+    (concat pf "ei")	"init file"
     (concat pf "el")	"library"
     (concat pf "ep")	"package"
     (concat pf "epa")	"autoremove"
@@ -607,6 +611,19 @@
      (replace-regexp-in-string "&[lg]t;" "" trans))
     (`latex
      (replace-regexp-in-string "[<>]" "" trans))))
+
+;;------------------------------------------------------------------------
+;; FIND EMACS INIT FUNCTION
+;;------------------------------------------------------------------------
+(defun find-emacs-init ()
+  "Open init file in the current window."
+  (interactive)
+  (find-file user-init-file))
+
+(defun find-emacs-dir ()
+  "Open emacs directory in the current window."
+  (interactive)
+  (find-file user-emacs-directory))
 
 ;;------------------------------------------------------------------------
 ;; AUTO MOVE NEW WINDOW ADVISING FUNCTION

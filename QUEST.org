@@ -95,8 +95,12 @@
     CLOSED: [2017-10-20 Jum 15:40]
 *** SUCCESS Improve language ability of aspell
     CLOSED: [2017-10-20 Jum 16:00]
+*** CANCEL Beat the Hydra
+    CLOSED: [2017-10-21 Sab 19:18]
 *** SUCCESS Use wich-key
     CLOSED: [2017-10-21 Sab 10:13]
+*** SUCCESS Knight knows location of the heart on him
+    CLOSED: [2017-10-21 Sab 19:22]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -126,7 +130,8 @@
     - [ ] Z
 *** TODO Improve Diminish power
 *** NEXT Get power of completion
-*** NEXT Beat the Hydra
+*** SOMEDAY Get skill of HTML and CSS
+*** SOMEDAY Manage 'gold' with ledger
 *** SOMEDAY Org with reveal power
 *** SOMEDAY Org with twitter bootstrap power
 *** SOMEDAY Try to use tiny menu
