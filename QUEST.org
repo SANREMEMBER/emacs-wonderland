@@ -100,9 +100,9 @@
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
-    - [ ] C
+    - [X] C for comment
     - [ ] D
-    - [ ] E
+    - [X] E for emacs
     - [X] F for files
     - [X] G for git
     - [X] H for help
@@ -113,11 +113,11 @@
     - [ ] M
     - [ ] N
     - [X] O for Org
-    - [X] P for packages
-    - [X] Q for quit
+    - [ ] P
+    - [ ] Q
     - [ ] R
     - [X] S for search
-    - [X] T
+    - [X] T for toggle
     - [X] U for undo tree
     - [ ] V
     - [X] W for windows
