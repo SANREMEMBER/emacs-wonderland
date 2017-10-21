@@ -101,6 +101,8 @@
     CLOSED: [2017-10-21 Sab 10:13]
 *** SUCCESS Knight knows location of the heart on him
     CLOSED: [2017-10-21 Sab 19:22]
+*** CANCEL Try to use tiny menu
+    CLOSED: [2017-10-21 Sab 19:53]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -129,12 +131,11 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** NEXT Get power of completion
+*** TODO Get power of completion
+*** TODO Org with twitter bootstrap power
+*** TODO Org with reveal power
 *** SOMEDAY Get skill of HTML and CSS
 *** SOMEDAY Manage 'gold' with ledger
-*** SOMEDAY Org with reveal power
-*** SOMEDAY Org with twitter bootstrap power
-*** SOMEDAY Try to use tiny menu
 
 *** SOMEDAY Use use-package to manage packages
 
