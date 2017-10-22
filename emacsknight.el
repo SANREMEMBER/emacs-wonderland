@@ -141,8 +141,10 @@
 ;;------------------------------------------------------------------------
 (setq org-hide-emphasis-markers t ;; Just italic
       org-ellipsis "  " ;; More cool ellipsis
-      org-log-done 'time ;; Closing timestap
+      org-log-done 'time ;; Closing timestamp
       org-image-actual-width 666 ;; Widt size for inline images
+      org-src-fontify-natively t ;; Highlight source
+      org-src-tab-acts-natively t ;; Native tabs for source
       )
 ;; Real bullets
 (font-lock-add-keywords 'org-mode
@@ -320,6 +322,7 @@
  "ol"	 'org-agenda-list
  "oc"	 'org-capture
  "op"	 'org-publish
+ "osc"   'org-edit-src-exit
  "sa"	 'counsel-ag			;; S
  "sl"	 'counsel-locate
  "so"	 'counsel-outline
@@ -350,7 +353,6 @@
   "oil" 'org-insert-link
   "oit" 'org-time-stamp
   "ose" 'org-edit-special
-  "osc" 'org-edit-src-exit
   "ot"	'org-set-tags
   "ti"	'org-toggle-inline-images
 )
@@ -413,7 +415,6 @@
     (concat pf "jw")	"word"
     (concat pf "o")	"org"		;; O
     (concat pf "oa")	"agenda"
-    (concat pf "oleh")	"list agenda"
     (concat pf "ob")	"buffer"
     (concat pf "oc")	"capture"
     (concat pf "oe")	"export"
@@ -424,6 +425,7 @@
     (concat pf "oi")	"insert"
     (concat pf "oil")	"link"
     (concat pf "oit")	"time"
+    (concat pf "ol")	"list agenda"
     (concat pf "os")	"source"
     (concat pf "ose")	"edit"
     (concat pf "osc")	"close"
