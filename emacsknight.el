@@ -655,6 +655,14 @@
 ;; Load secret weapon
 (load-file "~/.secretweapon.el")
 
+;; Magical closing parens
+(electric-pair-mode 1)
+
+;; Highlight current parens
+(show-paren-mode 1)
+(setq show-paren-delay 0)
+
+
 ;;------------------------------------------------------------------------
 ;; SAVE-PLACE
 ;;------------------------------------------------------------------------
