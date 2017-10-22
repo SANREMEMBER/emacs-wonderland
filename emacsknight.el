@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (company which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -120,6 +120,10 @@
     '(diminish 'all-the-icons-dired-mode))
   (eval-after-load "autorevert"
     '(diminish 'auto-revert-mode))
+  (eval-after-load "abbrev"
+    '(diminish 'abbrev-mode "A"))
+  (eval-after-load "company"
+    '(diminish 'company-mode "C"))
   (eval-after-load "evil-escape"
     '(diminish 'evil-escape-mode))
   (eval-after-load "ivy"
@@ -559,6 +563,16 @@
  ((executable-find "aspell")
   (setq ispell-program-name "aspell")
   (setq ispell-extra-args '("--sug-mode=ultra" "--lang=id"))))
+
+;;------------------------------------------------------------------------
+;; COMPANY
+;;------------------------------------------------------------------------
+(add-hook 'after-init-hook 'global-company-mode)
+;; Select next with tab
+(eval-after-load 'company
+  '(progn
+     (define-key company-active-map (kbd "TAB") 'company-complete-common-or-cycle)
+     (define-key company-active-map [tab] 'company-complete-common-or-cycle)))
 
 ;;------------------------------------------------------------------------
 ;; DIRED
