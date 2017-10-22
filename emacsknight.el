@@ -270,7 +270,7 @@
 ;; Default state for some modes
 (setq evil-insert-state-modes '(deft-mode))
 ;; Evil no abbrev again
-;; (setq evil-want-abbrev-expand-on-insert-exit nil)
+(setq evil-want-abbrev-expand-on-insert-exit nil)
 ;; Evil special key
 (define-key evil-normal-state-map (kbd "SPC TAB") 'evil-switch-to-windows-last-buffer)
 ;; EVIL-MAGIT-------------------------------------------------------------
