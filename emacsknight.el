@@ -576,7 +576,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;------------------------------------------------------------------------
-;; INSERT LINE FUNCTION
+;; INSERT LINE
 ;;------------------------------------------------------------------------
 (defun insert-line-below ()
   "Insert an empty line below the current line."
@@ -593,7 +593,7 @@
     (open-line 1)))
 
 ;;------------------------------------------------------------------------
-;; ISPELL SKIP FOR ORG FUNCTION
+;; ISPELL SKIP FOR ORG
 ;;------------------------------------------------------------------------
 (defun ispell-skip-for-org ()
   "Configure ispell-skip-region-alist for org-mode."
@@ -618,7 +618,7 @@
      (replace-regexp-in-string "[<>]" "" trans))))
 
 ;;------------------------------------------------------------------------
-;; FIND EMACS INIT FUNCTION
+;; FIND EMACS INIT
 ;;------------------------------------------------------------------------
 (defun find-emacs-init ()
   "Open init file in the current window."
@@ -631,7 +631,7 @@
   (find-file user-emacs-directory))
 
 ;;------------------------------------------------------------------------
-;; AUTO MOVE NEW WINDOW ADVISING FUNCTION
+;; AUTO MOVE NEW WINDOW ADVISING
 ;;------------------------------------------------------------------------
 (defadvice split-window (after move-point-to-new-window activate)
   "Moves the point to the newly created window after splitting."
