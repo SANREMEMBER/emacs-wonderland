@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (company which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -565,14 +565,12 @@
   (setq ispell-extra-args '("--sug-mode=ultra" "--lang=id"))))
 
 ;;------------------------------------------------------------------------
-;; COMPANY
+;; AUTO-COMPLETE
 ;;------------------------------------------------------------------------
-(add-hook 'after-init-hook 'global-company-mode)
-;; Select next with tab
-(eval-after-load 'company
-  '(progn
-     (define-key company-active-map (kbd "TAB") 'company-complete-common-or-cycle)
-     (define-key company-active-map [tab] 'company-complete-common-or-cycle)))
+(ac-config-default)
+;; ORG-AC-----------------------------------------------------------------
+(require 'org-ac)
+(org-ac/config-default)
 
 ;;------------------------------------------------------------------------
 ;; DIRED
