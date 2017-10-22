@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -547,6 +547,12 @@
       deft-text-mode 'org-mode
       deft-use-filename-as-title t
       deft-use-filter-string-for-filename t)
+
+;;------------------------------------------------------------------------
+;; MARKDOWN
+;;------------------------------------------------------------------------
+(setq markdown-hide-markup t
+      markdown-header-scaling t)
 
 ;;------------------------------------------------------------------------
 ;; GOOGLE-TRANSLATE
