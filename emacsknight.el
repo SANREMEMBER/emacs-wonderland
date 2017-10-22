@@ -52,6 +52,8 @@
 ;;------------------------------------------------------------------------
 ;; WINDOW ENHANCEMENT
 ;;------------------------------------------------------------------------
+;; Default title
+(setq-default frame-title-format '("%b - GNU Emacs"))
 ;; Hide (m)anything
 (menu-bar-mode -1)
 (when (display-graphic-p)

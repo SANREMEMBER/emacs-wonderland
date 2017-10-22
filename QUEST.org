@@ -132,8 +132,11 @@
     - [ ] Z
 *** TODO Improve Diminish power
 *** TODO Get power of completion
+*** TODO Get skill of markdown
 *** TODO Org with twitter bootstrap power
 *** TODO Org with reveal power
+*** NEXT Get fasd for find file
+*** NEXT Get aggresive-indent and to be more aggresive
 *** SOMEDAY Get skill of HTML and CSS
 *** SOMEDAY Manage 'gold' with ledger
 
