@@ -64,10 +64,13 @@
 (add-to-list 'default-frame-alist '(width . 75))
 ;; Scratch message
 (setq initial-scratch-message "
-;;------------------------------------------------------------------------
-;; SANREMEMBER @ EMACSKNIGHT /////////////////////////////////////////////
-;;------------------------------------------------------------------------
-
+;; ███████╗███╗   ███╗ █████╗  ██████╗███████╗ ;;
+;; ██╔════╝████╗ ████║██╔══██╗██╔════╝██╔════╝ ;;
+;; █████╗  ██╔████╔██║███████║██║     ███████╗ ;;
+;; ██╔══╝  ██║╚██╔╝██║██╔══██║██║     ╚════██║ ;;
+;; ███████╗██║ ╚═╝ ██║██║  ██║╚██████╗███████║ ;;
+;; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝ ;;
+                                           
 ")
 
 ;;------------------------------------------------------------------------
@@ -614,7 +617,7 @@
        ("r" gnus-summary-reply "Reply")
        ("W" gnus-summary-wide-reply-with-original "Reply all with original")
        ("w" gnus-summary-wide-reply "Reply all")
-       ("m" gnus-uu-mark-thread "mark #")
+       ("m" gnus-uu-mark-thread "mark")
        ("d" gnus-summary-delete-article "delete")
        ("q" nil "cancel"))
      ;; y is not used by default
