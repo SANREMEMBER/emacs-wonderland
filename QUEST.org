@@ -8,34 +8,24 @@
 
 *** SUCCESS Get Helm to increase power
     CLOSED: [2017-10-17 Sel 15:46]
-
 *** SUCCESS Evil taming
     CLOSED: [2017-10-17 Sel 15:46]
-
 *** SUCCESS Find the Evil leader
     CLOSED: [2017-10-17 Sel 15:46]
-
 *** SUCCESS Org closing item
     CLOSED: [2017-10-17 Sel 15:47]
-
 *** SUCCESS Get Magit for magical of Git
     CLOSED: [2017-10-17 Sel 16:52]
-
 *** SUCCESS Create skill to insert line below and above
     CLOSED: [2017-10-17 Sel 17:05]
-
 *** SUCCESS Change size of window
     CLOSED: [2017-10-17 Sel 18:04]
-
 *** SUCCESS Save place for better place
     CLOSED: [2017-10-17 Sel 18:21]
-
 *** SUCCESS Cleaning scratch home
     CLOSED: [2017-10-17 Sel 18:37]
-
 *** SUCCESS Setting for size of org inline images
     CLOSED: [2017-10-17 Sel 19:34]
-
 *** SUCCESS Get good looking theme for your eyes
     CLOSED: [2017-10-18 Rab 04:33]
 *** SUCCESS Train Evil to use Magit
@@ -68,13 +58,10 @@
     CLOSED: [2017-10-19 Kam 10:02]
 *** SUCCESS Train Evil to use org
     CLOSED: [2017-10-19 Kam 14:38]
-
 *** SUCCESS Beyond the Thunderbird, send mail with Gnus
     CLOSED: [2017-10-19 Kam 17:29]
-
 *** SUCCESS All the icons for Gnus for new performance
     CLOSED: [2017-10-19 Kam 18:01]
-
 *** SUCCESS Grab good items on Awesome Emacs repository
     CLOSED: [2017-10-19 Kam 18:47]
     - [X] Ivy
@@ -87,10 +74,8 @@
     CLOSED: [2017-10-20 Jum 05:08]
 *** SUCCESS Org Publish and Org Capture skill
     CLOSED: [2017-10-20 Jum 15:25]
-
 *** SUCCESS Create ability to publish project
     CLOSED: [2017-10-20 Jum 15:40]
-
 *** CANCEL Switch Evil with God
     CLOSED: [2017-10-20 Jum 15:40]
 *** SUCCESS Improve language ability of aspell
@@ -143,11 +128,9 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** NEXT Get aggresive-indent and to be more aggresive
 *** SOMEDAY Get skill of HTML and CSS
+*** SOMEDAY Get aggresive-indent and to be more aggresive
 *** SOMEDAY Manage 'gold' with ledger
 *** SOMEDAY Org with reveal power
-
 *** SOMEDAY Use use-package to manage packages
-
 *** SOMEDAY Evil leader organise term in key
