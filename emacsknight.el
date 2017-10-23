@@ -307,8 +307,7 @@
  "epr"	 'package-refresh-contents
  "epl"	 'package-list-packages
  "eq"	 'save-buffers-kill-terminal
- "fa"   'fasd-find-file                 ;; F
- "ff"	 'counsel-find-file	
+ "ff"	 'counsel-find-file	        ;; F
  "fn"	 'neotree
  "fr"	 'counsel-recentf
  "fs"	 'save-buffer
@@ -331,6 +330,7 @@
  "op"	 'org-publish
  "osc"   'org-edit-src-exit
  "sa"	 'counsel-ag			;; S
+ "sf"    'fasd-find-file
  "sl"	 'counsel-locate
  "so"	 'counsel-outline
  "ss"	 'swiper
@@ -392,6 +392,7 @@
     (concat pf "SPC")	"M-x"
     (concat pf "TAB")	"last buffer"
     (concat pf "a")	"apps"		;; A
+    (concat pf "am")    "mail"
     (concat pf "at")	"translate"
     (concat pf "ata")	"at point"
     (concat pf "atq")	"query"
@@ -415,7 +416,6 @@
     (concat pf "eq")	"quit"
     (concat pf "et")	"themes"
     (concat pf "f")	"file"		;; F
-    (concat pf "fa")    "fasd"
     (concat pf "ff")	"find"
     (concat pf "fr")	"recent"
     (concat pf "fs")	"save"
@@ -472,6 +472,7 @@
     (concat pf "ot")	"tags"
     (concat pf "s")	"search"	;; S
     (concat pf "sa")	"ag"
+    (concat pf "sf")    "fasd"
     (concat pf "sl")	"locate"
     (concat pf "so")	"outline"
     (concat pf "ss")	"swiper"
@@ -584,14 +585,14 @@
   '(progn
      (defhydra hydra-gnus-group (:color blue)
        "Do?"
-       ("a" gnus-group-list-active "REMOTE groups A A")
-       ("l" gnus-group-list-all-groups "LOCAL groups L")
-       ("c" gnus-topic-catchup-articles "Read all c")
-       ("G" gnus-group-make-nnir-group "Search server G G")
-       ("g" gnus-group-get-new-news "Refresh g")
+       ("a" gnus-group-list-active "REMOTE groups")
+       ("l" gnus-group-list-all-groups "LOCAL groups")
+       ("c" gnus-topic-catchup-articles "Read all")
+       ("G" gnus-group-make-nnir-group "Search server")
+       ("g" gnus-group-get-new-news "Refresh")
        ("s" gnus-group-enter-server-mode "Servers")
-       ("m" gnus-group-new-mail "Compose m OR C-x m")
-       ("#" gnus-topic-mark-topic "mark #")
+       ("m" gnus-group-new-mail "Compose")
+       ("#" gnus-topic-mark-topic "mark")
        ("q" nil "cancel"))
      ;; y is not used by default
      (define-key gnus-group-mode-map "y" 'hydra-gnus-group/body)))
@@ -601,19 +602,20 @@
   '(progn
      (defhydra hydra-gnus-summary (:color blue)
        "Do?"
-       ("s" gnus-summary-show-thread "Show thread")
-       ("h" gnus-summary-hide-thread "Hide thread")
-       ("n" gnus-summary-insert-new-articles "Refresh / N")
-       ("f" gnus-summary-mail-forward "Forward C-c C-f")
+       ("s" gnus-summary-show-thread "Show")
+       ("h" gnus-summary-hide-thread "Hide")
+       ("n" gnus-summary-insert-new-articles "Refresh")
+       ("f" gnus-summary-mail-forward "Forward")
        ("!" gnus-summary-tick-article-forward "Mail -> disk !")
        ("p" gnus-summary-put-mark-as-read "Mail <- disk")
-       ("c" gnus-summary-catchup-and-exit "Read all c")
-       ("e" gnus-summary-resend-message-edit "Resend S D e")
-       ("R" gnus-summary-reply-with-original "Reply with original R")
-       ("r" gnus-summary-reply "Reply r")
-       ("W" gnus-summary-wide-reply-with-original "Reply all with original S W")
-       ("w" gnus-summary-wide-reply "Reply all S w")
-       ("#" gnus-topic-mark-topic "mark #")
+       ("c" gnus-summary-catchup-and-exit "Read all")
+       ("e" gnus-summary-resend-message-edit "Resend")
+       ("R" gnus-summary-reply-with-original "Reply with original")
+       ("r" gnus-summary-reply "Reply")
+       ("W" gnus-summary-wide-reply-with-original "Reply all with original")
+       ("w" gnus-summary-wide-reply "Reply all")
+       ("m" gnus-uu-mark-thread "mark #")
+       ("d" gnus-summary-delete-article "delete")
        ("q" nil "cancel"))
      ;; y is not used by default
      (define-key gnus-summary-mode-map "y" 'hydra-gnus-summary/body)))
@@ -624,11 +626,11 @@
      (defhydra hydra-gnus-article (:color blue)
        "Do?"
        ("f" gnus-summary-mail-forward "Forward")
-       ("R" gnus-article-reply-with-original "Reply with original R")
-       ("r" gnus-article-reply "Reply r")
-       ("W" gnus-article-wide-reply-with-original "Reply all with original S W")
-       ("o" gnus-mime-save-part "Save attachment at point o")
-       ("w" gnus-article-wide-reply "Reply all S w")
+       ("R" gnus-article-reply-with-original "Reply with original")
+       ("r" gnus-article-reply "Reply")
+       ("W" gnus-article-wide-reply-with-original "Reply all with original")
+       ("o" gnus-mime-save-part "Save attachment at point")
+       ("w" gnus-article-wide-reply "Reply all")
        ("q" nil "cancel"))
      ;; y is not used by default
      (define-key gnus-article-mode-map "y" 'hydra-gnus-article/body)))
@@ -637,8 +639,8 @@
   '(progn
      (defhydra hydra-message (:color blue)
        "Do?"
-       ("ca" mml-attach-file "Attach C-c C-a")
-       ("cc" message-send-and-exit "Send C-c C-c")
+       ("ca" mml-attach-file "Attach")
+       ("cc" message-send-and-exit "Send")
        ("q" nil "cancel"))
      (global-set-key (kbd "C-c C-y") 'hydra-message/body)))
 
