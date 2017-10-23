@@ -348,7 +348,7 @@
  "wk"	 'evil-window-up
  "wl"	 'evil-window-right
  "y"	 'counsel-yank-pop)		;; Y
-;; Special key just for some modes
+;; Special key just for org-mode
 (evil-leader/set-key-for-mode 'org-mode
   "jh"	'counsel-org-goto
   "ob"	'org-tree-to-indirect-buffer
@@ -362,6 +362,22 @@
   "ot"	'org-set-tags
   "ti"	'org-toggle-inline-images
 )
+;; Special key just for markdown-mode
+(evil-leader/set-key-for-mode 'markdown-mode
+  "m-"	'markdown-insert-hr
+  "mil"	'markdown-insert-link
+  "miu" 'markdown-insert-uri
+  "mif" 'markdown-insert-footnote
+  "mii" 'markdown-insert-image
+  "miI" 'markdown-insert-reference-image
+  "miw" 'markdown-insert-wiki-link
+  "mvb" 'markdown-insert-bold
+  "mvi" 'markdown-insert-italic
+  "mvc" 'markdown-insert-code
+  "mvq" 'markdown-insert-blockquote
+  "mvp" 'markdown-insert-pre
+)
+
 
 ;;------------------------------------------------------------------------
 ;; WHICH-KEY
@@ -419,6 +435,21 @@
     (concat pf "jl")	"line"
     (concat pf "jt")	"timer"
     (concat pf "jw")	"word"
+    (concat pf "m")	"markdown"      ;; M
+    (concat pf "m-")	"hr line"
+    (concat pf "mi")	"insert"
+    (concat pf "mil")	"link"
+    (concat pf "miu")	"uri"
+    (concat pf "mif")	"footnote"
+    (concat pf "mii")	"image"
+    (concat pf "miI")	"reference image"
+    (concat pf "miw")	"wiki link"
+    (concat pf "mv")	"visual"
+    (concat pf "mvb")	"bold"
+    (concat pf "mvi")	"italic"
+    (concat pf "mvc")	"code"
+    (concat pf "mvq")	"quote"
+    (concat pf "mvp")	"pre"
     (concat pf "o")	"org"		;; O
     (concat pf "oa")	"agenda"
     (concat pf "ob")	"buffer"
