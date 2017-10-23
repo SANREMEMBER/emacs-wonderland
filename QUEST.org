@@ -113,6 +113,8 @@
     CLOSED: [2017-10-23 Sen 16:48]
 *** SUCCESS Beat Pandoc panda
     CLOSED: [2017-10-23 Sen 17:10]
+*** SUCCESS Set up writer room
+    CLOSED: [2017-10-23 Sen 18:07]
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers

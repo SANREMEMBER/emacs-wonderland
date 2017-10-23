@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -339,6 +339,7 @@
  "tm"	 'toggle-frame-maximized
  "tn"	 'neotree-toggle
  "tb"	 'menu-bar-mode
+ "tw"	 'writeroom-mode
  "u"	 'undo-tree-visualize		;; U
  "w-"	 'split-window-below		;; W
  "w/"	 'split-window-right
@@ -378,7 +379,6 @@
   "mvq" 'markdown-insert-blockquote
   "mvp" 'markdown-insert-pre
 )
-
 
 ;;------------------------------------------------------------------------
 ;; WHICH-KEY
@@ -511,6 +511,15 @@
 ;;------------------------------------------------------------------------
 (require 'smex)
 (smex-initialize)
+
+;;------------------------------------------------------------------------
+;; WRITEROOM
+;;------------------------------------------------------------------------
+;; Key for change size margin
+(with-eval-after-load 'writeroom-mode
+  (define-key writeroom-mode-map (kbd "C-<") #'writeroom-decrease-width)
+  (define-key writeroom-mode-map (kbd "C->") #'writeroom-increase-width)
+  (define-key writeroom-mode-map (kbd "C-=") #'writeroom-adjust-width))
 
 ;;------------------------------------------------------------------------
 ;; NEOTREE
