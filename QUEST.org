@@ -107,6 +107,10 @@
     CLOSED: [2017-10-23 Sen 05:05]
 *** SUCCESS Get skill of markdown
     CLOSED: [2017-10-23 Sen 05:51]
+*** SUCCESS Get fasd for find file
+    CLOSED: [2017-10-23 Sen 13:44]
+*** SUCCESS Org with twitter bootstrap power
+    CLOSED: [2017-10-23 Sen 16:48]
 *** TODO Train the leader of Evil [57%]
     - [X] A fot applications
     - [X] B for buffers
@@ -135,12 +139,11 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** TODO Org with twitter bootstrap power
-*** TODO Org with reveal power
-*** NEXT Get fasd for find file
+*** TODO Beat Pandoc panda
 *** NEXT Get aggresive-indent and to be more aggresive
 *** SOMEDAY Get skill of HTML and CSS
 *** SOMEDAY Manage 'gold' with ledger
+*** SOMEDAY Org with reveal power
 
 *** SOMEDAY Use use-package to manage packages
 

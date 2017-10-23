@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -307,7 +307,8 @@
  "epr"	 'package-refresh-contents
  "epl"	 'package-list-packages
  "eq"	 'save-buffers-kill-terminal
- "ff"	 'counsel-find-file		;; F
+ "fa"   'fasd-find-file                 ;; F
+ "ff"	 'counsel-find-file	
  "fn"	 'neotree
  "fr"	 'counsel-recentf
  "fs"	 'save-buffer
@@ -414,7 +415,8 @@
     (concat pf "eq")	"quit"
     (concat pf "et")	"themes"
     (concat pf "f")	"file"		;; F
-    (concat pf "ff")	" find"
+    (concat pf "fa")    "fasd"
+    (concat pf "ff")	"find"
     (concat pf "fr")	"recent"
     (concat pf "fs")	"save"
     (concat pf "g")	"git"		;; G
@@ -699,11 +701,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-
  '(markdown-header-face-1 ((t (:inherit markdown-header-face :height 1.4))))
  '(markdown-header-face-2 ((t (:inherit markdown-header-face :height 1.3))))
- '(markdown-header-face-3 ((t (:inherit markdown-header-face :height 1.2))))
- )
+ '(markdown-header-face-3 ((t (:inherit markdown-header-face :height 1.2)))))
 
 ;; No times for yes
 (fset 'yes-or-no-p 'y-or-n-p)
