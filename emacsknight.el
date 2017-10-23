@@ -551,8 +551,7 @@
 ;;------------------------------------------------------------------------
 ;; MARKDOWN
 ;;------------------------------------------------------------------------
-(setq markdown-hide-markup t
-      markdown-header-scaling t)
+(setq markdown-hide-markup t)
 
 ;;------------------------------------------------------------------------
 ;; GOOGLE-TRANSLATE
@@ -669,6 +668,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+
+ '(markdown-header-face-1 ((t (:inherit markdown-header-face :height 1.4))))
+ '(markdown-header-face-2 ((t (:inherit markdown-header-face :height 1.3))))
+ '(markdown-header-face-3 ((t (:inherit markdown-header-face :height 1.2))))
  )
 
 ;; No times for yes
