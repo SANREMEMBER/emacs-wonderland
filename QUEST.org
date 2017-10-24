@@ -100,6 +100,8 @@
     CLOSED: [2017-10-23 Sen 18:07]
 *** SUCCESS Beat the Hydra
     CLOSED: [2017-10-23 Sen 19:21]
+*** SUCCESS Rainbow color skill
+    CLOSED: [2017-10-24 Sel 15:28]
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers
@@ -128,11 +130,10 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** NEXT Get skill of HTML and CSS
-*** NEXT Get Emmet power
-*** NEXT Get web beautify cosmetic
+*** TODO Get skill of HTML and CSS
+*** TODO Get Emmet power
+*** TODO Get web beautify cosmetic
 *** NEXT Get skewer Power
-*** SOMEDAY Rainbow color skill
 *** SOMEDAY Get aggresive-indent and to be more aggresive
 *** SOMEDAY Manage 'gold' with ledger
 *** SOMEDAY Org with reveal power
