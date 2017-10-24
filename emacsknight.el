@@ -302,7 +302,9 @@
  "bd"	 'kill-this-buffer
  "cb"	 'comment-box			;; C
  "cl"	 'comment-line
- "ed"	 'find-emacs-dir                ;; E
+ "ebl"	 'bookmark-bmenu-list           ;; E
+ "ebs"   'bookmark-set
+ "ed"	 'find-emacs-dir
  "ei"	 'find-emacs-init
  "el"	 'counsel-find-library
  "et"	 'counsel-load-theme
@@ -410,6 +412,9 @@
     (concat pf "cb")	"box"
     (concat pf "cl")	"line"
     (concat pf "e")	"emacs"		;; E
+    (concat pf "eb")	"bookmark"
+    (concat pf "ebl")	"list"
+    (concat pf "ebs")	"set"
     (concat pf "ed")	"directory"
     (concat pf "ei")	"init file"
     (concat pf "el")	"library"
