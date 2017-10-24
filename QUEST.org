@@ -128,7 +128,11 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** SOMEDAY Get skill of HTML and CSS
+*** NEXT Get skill of HTML and CSS
+*** NEXT Get Emmet power
+*** NEXT Get web beautify cosmetic
+*** NEXT Get skewer Power
+*** SOMEDAY Rainbow color skill
 *** SOMEDAY Get aggresive-indent and to be more aggresive
 *** SOMEDAY Manage 'gold' with ledger
 *** SOMEDAY Org with reveal power
