@@ -810,9 +810,9 @@
 ;;------------------------------------------------------------------------
 ;; AUTO MOVE NEW WINDOW ADVISING
 ;;------------------------------------------------------------------------
-(defadvice split-window (after move-point-to-new-window activate)
-  "Moves the point to the newly created window after splitting."
-  (other-window 1))
+;; (defadvice split-window (after move-point-to-new-window activate)
+;;   "Moves the point to the newly created window after splitting."
+;;   (other-window 1))
 
 
 
