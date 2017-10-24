@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -541,6 +541,14 @@
 	    (define-key evil-normal-state-local-map (kbd "H") 'neotree-hidden-file-toggle)))
 ;; Neotree theme
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+;;------------------------------------------------------------------------
+;; EMMET
+;;------------------------------------------------------------------------
+(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook  'emmet-mode)
+;; Move cursor to entire quotes
+(setq emmet-move-cursor-between-quotes t)
 
 ;;------------------------------------------------------------------------
 ;; GNUS
