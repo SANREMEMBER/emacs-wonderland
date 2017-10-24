@@ -136,9 +136,9 @@
     - [X] Y for yanking
     - [ ] Z
 *** TODO Improve Diminish power
-*** NEXT Get skewer Power
-*** SOMEDAY Get aggresive-indent and to be more aggresive
+*** TODO Get aggresive-indent and to be more aggresive
 *** SOMEDAY Manage 'gold' with ledger
 *** SOMEDAY Org with reveal power
+*** SOMEDAY Get skewer Power
 *** SOMEDAY Use use-package to manage packages
 *** SOMEDAY Evil leader organise term in key
