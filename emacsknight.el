@@ -278,6 +278,7 @@
 	    (define-key evil-normal-state-map (kbd "RET") 'org-open-at-point))) 
 ;; Default state for some modes
 (setq evil-insert-state-modes '(deft-mode))
+;; (setq evil-emacs-state-modes '(calc-mode calc-trail-mode))
 ;; Evil no abbrev again
 (setq evil-want-abbrev-expand-on-insert-exit nil)
 ;; Evil special key
