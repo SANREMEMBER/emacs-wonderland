@@ -277,7 +277,7 @@
 	    (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
 	    (define-key evil-normal-state-map (kbd "RET") 'org-open-at-point))) 
 ;; Default state for some modes
-(setq evil-insert-state-modes '(deft-mode))
+(add-to-list 'evil-insert-state-modes 'deft-mode)
 ;; Evil no abbrev again
 (setq evil-want-abbrev-expand-on-insert-exit nil)
 ;; Evil special key
@@ -562,13 +562,9 @@
 ;;------------------------------------------------------------------------
 (add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
 ;; States for ledger report
-;; (setq evil-emacs-state-modes '(ledger-report-mode))
-;; Completion for ledger
-(add-hook 'ledger-mode-hook (lambda () (auto-complete-mode 1)))
+(add-to-list 'evil-emacs-state-modes 'ledger-report-mode)
 ;; Align ammount
-(setq ledger-post-amount-alignment-at :end
-      ledger-post-amount-alignment-column 68
-      ledger-iso-date-format t)
+(setq ledger-post-auto-adjust-amounts t)
 
 ;;------------------------------------------------------------------------
 ;; GNUS
