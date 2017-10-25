@@ -108,6 +108,8 @@
     CLOSED: [2017-10-24 Sel 15:36]
 *** SUCCESS Get skill of HTML and CSS
     CLOSED: [2017-10-24 Sel 15:36]
+*** SUCCESS Manage 'gold' with ledger
+    CLOSED: [2017-10-25 Rab 15:12]
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers
@@ -138,7 +140,6 @@
 *** TODO Improve Diminish power
 *** TODO Get aggresive-indent and to be more aggresive
 *** TODO Need new power to automove new windows
-*** SOMEDAY Manage 'gold' with ledger
 *** SOMEDAY Org with reveal power
 *** SOMEDAY Get skewer Power
 *** SOMEDAY Use use-package to manage packages
