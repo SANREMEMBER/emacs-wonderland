@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (evil-ledger ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -278,7 +278,6 @@
 	    (define-key evil-normal-state-map (kbd "RET") 'org-open-at-point))) 
 ;; Default state for some modes
 (setq evil-insert-state-modes '(deft-mode))
-;; (setq evil-emacs-state-modes '(calc-mode calc-trail-mode))
 ;; Evil no abbrev again
 (setq evil-want-abbrev-expand-on-insert-exit nil)
 ;; Evil special key
@@ -557,6 +556,19 @@
 (add-hook 'css-mode-hook  'emmet-mode)
 ;; Move cursor to entire quotes
 (setq emmet-move-cursor-between-quotes t)
+
+;;------------------------------------------------------------------------
+;; LEDGER
+;;------------------------------------------------------------------------
+(add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
+;; States for ledger report
+;; (setq evil-emacs-state-modes '(ledger-report-mode))
+;; Completion for ledger
+(add-hook 'ledger-mode-hook (lambda () (auto-complete-mode 1)))
+;; Align ammount
+(setq ledger-post-amount-alignment-at :end
+      ledger-post-amount-alignment-column 68
+      ledger-iso-date-format t)
 
 ;;------------------------------------------------------------------------
 ;; GNUS
