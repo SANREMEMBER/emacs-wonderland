@@ -140,6 +140,7 @@
 *** TODO Improve Diminish power
 *** TODO Get aggresive-indent and to be more aggresive
 *** TODO Need new power to automove new windows
+*** TODO Get engine to search the web
 *** SOMEDAY Org with reveal power
 *** SOMEDAY Get skewer Power
 *** SOMEDAY Use use-package to manage packages
