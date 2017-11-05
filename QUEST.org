@@ -110,6 +110,8 @@
     CLOSED: [2017-10-24 Sel 15:36]
 *** SUCCESS Manage 'gold' with ledger
     CLOSED: [2017-10-25 Rab 15:12]
+*** SUCCESS Get ace window skill
+    CLOSED: [2017-11-05 Min 17:25]
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers

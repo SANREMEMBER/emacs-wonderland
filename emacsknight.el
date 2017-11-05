@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -356,6 +356,7 @@
  "u"	 'undo-tree-visualize		;; U
  "w-"	 'split-window-below		;; W
  "w/"	 'split-window-right
+ "wa"    'ace-window
  "wd"	 'delete-window
  "wD"	 'delete-other-windows
  "wh"	 'evil-window-left
@@ -506,6 +507,7 @@
     (concat pf "w")	"window"	;; W
     (concat pf "w-")	"horizontal"
     (concat pf "w/")	"vertical"
+    (concat pf "wa")	"ace"
     (concat pf "wd")	"delete"
     (concat pf "wD")	"delete others"
     (concat pf "wh")	"left"
@@ -694,6 +696,11 @@
 ;; MARKDOWN
 ;;------------------------------------------------------------------------
 (setq markdown-hide-markup t)
+
+;;------------------------------------------------------------------------
+;; ACE-WINDOW
+;;------------------------------------------------------------------------
+(setq aw-dispatch-always t)
 
 ;;------------------------------------------------------------------------
 ;; GOOGLE-TRANSLATE
