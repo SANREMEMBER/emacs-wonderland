@@ -365,6 +365,7 @@
  "wl"	 'evil-window-right
  "ws"    'toggle-window-split
  "y"	 'counsel-yank-pop)		;; Y
+
 ;; Special key just for org-mode
 (evil-leader/set-key-for-mode 'org-mode
   "jh"	'counsel-org-goto
@@ -377,8 +378,8 @@
   "oit" 'org-time-stamp
   "ose" 'org-edit-special
   "ot"	'org-set-tags
-  "ti"	'org-toggle-inline-images
-)
+  "ti"	'org-toggle-inline-images)
+
 ;; Special key just for markdown-mode
 (evil-leader/set-key-for-mode 'markdown-mode
   "m-"	'markdown-insert-hr
@@ -392,8 +393,8 @@
   "mvi" 'markdown-insert-italic
   "mvc" 'markdown-insert-code
   "mvq" 'markdown-insert-blockquote
-  "mvp" 'markdown-insert-pre
-)
+  "mvp" 'markdown-insert-pre)
+
 ;; Special key just for ledger-mode
 (evil-leader/set-key-for-mode 'ledger-mode
   "la"  'ledger-add-transaction
