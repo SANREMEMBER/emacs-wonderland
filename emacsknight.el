@@ -404,9 +404,9 @@
 ;; WHICH-KEY
 ;;------------------------------------------------------------------------
 (which-key-mode 1)
-;; which key as minibuffer
+;; Which key as minibuffer
 (which-key-setup-minibuffer)
-;; declare prefix
+;; Declare prefix for general
 (dolist (pf '("SPC " "M-x "))
   (which-key-declare-prefixes
     (concat pf "SPC")	"M-x"
@@ -456,47 +456,16 @@
     (concat pf "ik")	"above"
     (concat pf "j")	"jump"		;; J
     (concat pf "jc")	"char"
-    (concat pf "jh")	"heading"
     (concat pf "jl")	"line"
     (concat pf "jt")	"timer"
     (concat pf "jw")	"word"
-    (concat pf "l")     "ledger"        ;; L
-    (concat pf "la")    "add transaction"
-    (concat pf "lc")    "clean"
-    (concat pf "lr")    "report"
-    (concat pf "m")	"markdown"      ;; M
-    (concat pf "m-")	"hr line"
-    (concat pf "mi")	"insert"
-    (concat pf "mil")	"link"
-    (concat pf "miu")	"uri"
-    (concat pf "mif")	"footnote"
-    (concat pf "mii")	"image"
-    (concat pf "miI")	"reference image"
-    (concat pf "miw")	"wiki link"
-    (concat pf "mv")	"visual"
-    (concat pf "mvb")	"bold"
-    (concat pf "mvi")	"italic"
-    (concat pf "mvc")	"code"
-    (concat pf "mvq")	"quote"
-    (concat pf "mvp")	"pre"
     (concat pf "o")	"org"		;; O
     (concat pf "oa")	"agenda"
-    (concat pf "ob")	"buffer"
     (concat pf "oc")	"capture"
-    (concat pf "oe")	"export"
-    (concat pf "oed")	"dispatch"
-    (concat pf "oeh")	"html"
-    (concat pf "oeo")	"odt"
-    (concat pf "oem")	"markdown"
-    (concat pf "oi")	"insert"
-    (concat pf "oil")	"link"
-    (concat pf "oit")	"time"
     (concat pf "ol")	"list agenda"
     (concat pf "os")	"source"
-    (concat pf "ose")	"edit"
     (concat pf "osc")	"close"
     (concat pf "op")	"publish"
-    (concat pf "ot")	"tags"
     (concat pf "s")	"search"	;; S
     (concat pf "sa")	"ag"
     (concat pf "sf")    "fasd"
@@ -504,7 +473,6 @@
     (concat pf "so")	"outline"
     (concat pf "ss")	"swiper"
     (concat pf "t")	"toggle"	;; T
-    (concat pf "ti")	"images"
     (concat pf "tl")	"line"
     (concat pf "tln")	"number"
     (concat pf "tlw")	"wrap"
@@ -526,6 +494,54 @@
     (concat pf "ws")    "switch split"
     (concat pf "y")	"yank"		;; Y
     ))
+
+;; Declare prefix for org
+(dolist (pf '("SPC " "M-x "))
+  (which-key-declare-prefixes-for-mode 'org-mode
+    (concat pf "jh")	"heading"
+    (concat pf "ob")	"buffer"
+    (concat pf "oe")	"export"
+    (concat pf "oed")	"dispatch"
+    (concat pf "oeh")	"html"
+    (concat pf "oeo")	"odt"
+    (concat pf "oem")	"markdown"
+    (concat pf "oi")	"insert"
+    (concat pf "oil")	"link"
+    (concat pf "oit")	"time"
+    (concat pf "ose")	"edit"
+    (concat pf "ot")	"tags"
+    (concat pf "ti")	"images"
+    ))
+
+;; Declare prefix for markdown
+(dolist (pf '("SPC " "M-x "))
+  (which-key-declare-prefixes-for-mode 'markdown-mode
+    (concat pf "m")	"markdown"
+    (concat pf "m-")	"hr line"
+    (concat pf "mi")	"insert"
+    (concat pf "mil")	"link"
+    (concat pf "miu")	"uri"
+    (concat pf "mif")	"footnote"
+    (concat pf "mii")	"image"
+    (concat pf "miI")	"reference image"
+    (concat pf "miw")	"wiki link"
+    (concat pf "mv")	"visual"
+    (concat pf "mvb")	"bold"
+    (concat pf "mvi")	"italic"
+    (concat pf "mvc")	"code"
+    (concat pf "mvq")	"quote"
+    (concat pf "mvp")	"pre"
+    ))
+
+;; Declare prefix for ledger
+(dolist (pf '("SPC " "M-x "))
+  (which-key-declare-prefixes-for-mode 'ledger-mode
+    (concat pf "l")     "ledger"
+    (concat pf "la")    "add transaction"
+    (concat pf "lc")    "clean"
+    (concat pf "lr")    "report"
+    ))
+
 
 ;;------------------------------------------------------------------------
 ;; IVY

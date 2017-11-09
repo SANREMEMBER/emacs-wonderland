@@ -112,6 +112,8 @@
     CLOSED: [2017-10-25 Rab 15:12]
 *** SUCCESS Get ace window skill
     CLOSED: [2017-11-05 Min 17:25]
+*** SUCCESS Organize declaration prefixes
+    CLOSED: [2017-11-09 Kam 19:12]
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers
