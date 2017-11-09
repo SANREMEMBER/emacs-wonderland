@@ -394,6 +394,11 @@
   "mvq" 'markdown-insert-blockquote
   "mvp" 'markdown-insert-pre
 )
+;; Special key just for ledger-mode
+(evil-leader/set-key-for-mode 'ledger-mode
+  "la"  'ledger-add-transaction
+  "lc"  'ledger-mode-clean-buffer
+  "lr"  'ledger-report)
 
 ;;------------------------------------------------------------------------
 ;; WHICH-KEY
@@ -455,6 +460,10 @@
     (concat pf "jl")	"line"
     (concat pf "jt")	"timer"
     (concat pf "jw")	"word"
+    (concat pf "l")     "ledger"        ;; L
+    (concat pf "la")    "add transaction"
+    (concat pf "lc")    "clean"
+    (concat pf "lr")    "report"
     (concat pf "m")	"markdown"      ;; M
     (concat pf "m-")	"hr line"
     (concat pf "mi")	"insert"
