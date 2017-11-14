@@ -299,7 +299,8 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
- "ad"	 'deft                          ;; A
+ "ac"	 'calc-dispatch                 ;; A
+ "ad"	 'deft
  "am"	 'gnus
  "ata"	 'google-translate-at-point
  "atq"	 'google-translate-query-translate
@@ -413,6 +414,7 @@
     (concat pf "SPC")	"M-x"
     (concat pf "TAB")	"last buffer"
     (concat pf "a")	"apps"		;; A
+    (concat pf "ac")    "calc"
     (concat pf "am")    "mail"
     (concat pf "at")	"translate"
     (concat pf "ata")	"at point"
