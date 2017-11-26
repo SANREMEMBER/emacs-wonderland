@@ -381,6 +381,20 @@
   "ot"	'org-set-tags
   "ti"	'org-toggle-inline-images)
 
+;; Special key just for python-mode
+(evil-leader/set-key-for-mode 'python-mode
+  "pic" 'python-skeleton-class
+  "pid" 'python-skeleton-def
+  "pif" 'python-skeleton-for
+  "pii" 'python-skeleton-if
+  "pim" 'python-skeleton-import
+  "pit" 'python-skeleton-try
+  "piw" 'python-skeleton-while
+  "pr"	'run-python
+  "psb" 'python-shell-send-buffer
+  "psf" 'python-shell-send-file
+  "psr" 'python-shell-send-region)
+
 ;; Special key just for markdown-mode
 (evil-leader/set-key-for-mode 'markdown-mode
   "m-"	'markdown-insert-hr
@@ -515,6 +529,26 @@
     (concat pf "ot")	"tags"
     (concat pf "ti")	"images"
     ))
+
+;; Declare prefix for python
+(dolist (pf '("SPC " "M-x "))
+  (which-key-declare-prefixes-for-mode 'python-mode
+    (concat pf "p")	"python"
+    (concat pf "pi")	"insert"
+    (concat pf "pic")	"class"
+    (concat pf "pid")	"def"
+    (concat pf "pif")	"for"
+    (concat pf "pii")	"if"
+    (concat pf "pim")	"import"
+    (concat pf "pit")	"try"
+    (concat pf "piw")	"while"
+    (concat pf "pr")	"run"
+    (concat pf "ps")	"send"
+    (concat pf "psb")	"buffer"
+    (concat pf "psf")	"file"
+    (concat pf "psr")	"region"
+    ))
+
 
 ;; Declare prefix for markdown
 (dolist (pf '("SPC " "M-x "))
