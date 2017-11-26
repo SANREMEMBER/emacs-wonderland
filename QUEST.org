@@ -120,8 +120,8 @@
     CLOSED: [2017-11-26 Min 18:48]
 *** SUCCESS Evil leader keeps a python
     CLOSED: [2017-11-26 Min 19:38]
-*** TODO Anaconda and python as good pet
-*** TODO Train the leader of Evil [61%]
+*** TODO Anaconda and python as good pets
+*** TODO Train the leader of Evil [65%]
     - [X] A fot applications
     - [X] B for buffers
     - [X] C for comment
@@ -137,7 +137,7 @@
     - [X] M for markdown
     - [ ] N
     - [X] O for Org
-    - [ ] P
+    - [X] P for Python
     - [ ] Q
     - [ ] R
     - [X] S for search
