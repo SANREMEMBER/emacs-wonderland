@@ -118,7 +118,9 @@
     CLOSED: [2017-11-26 Min 05:02]
 *** SUCCESS Get engine to search the web
     CLOSED: [2017-11-26 Min 18:48]
-*** TODO Evil leader keeps a python
+*** SUCCESS Evil leader keeps a python
+    CLOSED: [2017-11-26 Min 19:38]
+*** TODO Anaconda and python as good pet
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers
