@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -732,11 +732,41 @@
 (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 ;; States for anaconda view
 (add-to-list 'evil-emacs-state-modes 'anaconda-mode-view-mode)
-;
+
 ;;------------------------------------------------------------------------
 ;; ACE-WINDOW
 ;;------------------------------------------------------------------------
 (setq aw-dispatch-always t)
+
+;;------------------------------------------------------------------------
+;; ENGINE
+;;------------------------------------------------------------------------
+(require 'engine-mode)
+(engine-mode t)
+;; Set default browser for engine
+(setq engine/browser-function 'eww-browse-url)
+;; Chane keymap
+(engine/set-keymap-prefix (kbd "C-c s"))
+;; Search on DuckDuckGo
+(defengine duckduckgo
+  "https://duckduckgo.com/?q=%s"
+  :keybinding "d")
+;; Search on Google
+(defengine google
+  "http://www.google.com/search?ie=utf-8&oe=utf-8&q=%s"
+  :keybinding "g")
+;; Search on GitHub
+(defengine github
+  "https://github.com/search?ref=simplesearch&q=%s"
+  :keybinding "h")
+;; Search on Stack Overflow
+(defengine stack-overflow
+  "https://stackoverflow.com/search?q=%s"
+  :keybinding "s")
+;; Search on Wikipedia
+(defengine wikipedia
+  "http://www.wikipedia.org/search-redirect.php?language=en&go=Go&search=%s"
+  :keybinding "w")
 
 ;;------------------------------------------------------------------------
 ;; GOOGLE-TRANSLATE
