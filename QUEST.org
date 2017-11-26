@@ -116,6 +116,9 @@
     CLOSED: [2017-11-09 Kam 19:12]
 *** SUCCESS Beat Anaconda
     CLOSED: [2017-11-26 Min 05:02]
+*** SUCCESS Get engine to search the web
+    CLOSED: [2017-11-26 Min 18:48]
+*** TODO Evil leader keeps a python
 *** TODO Train the leader of Evil [61%]
     - [X] A fot applications
     - [X] B for buffers
@@ -146,7 +149,6 @@
 *** TODO Improve Diminish power
 *** TODO Get aggresive-indent and to be more aggresive
 *** TODO Need new power to automove new windows
-*** TODO Get engine to search the web
 *** SOMEDAY Org with reveal power
 *** SOMEDAY Get skewer Power
 *** SOMEDAY Use use-package to manage packages
