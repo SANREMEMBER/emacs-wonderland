@@ -299,8 +299,10 @@
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
  "<SPC>" 'counsel-M-x
- "ac"	 'calc-dispatch                 ;; A
+ "aa"    'ansi-term                     ;; A
+ "ac"	 'calc-dispatch
  "ad"	 'deft
+ "ae"    'eshell
  "am"	 'gnus
  "ata"	 'google-translate-at-point
  "atq"	 'google-translate-query-translate
