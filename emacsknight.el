@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (py-yapf yapfify engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -383,6 +383,10 @@
 
 ;; Special key just for python-mode
 (evil-leader/set-key-for-mode 'python-mode
+  "pd" 'anaconda-mode-show-doc
+  "pfa" 'anaconda-mode-find-assignments
+  "pfd" 'anaconda-mode-find-definitions
+  "pfr" 'anaconda-mode-find-references
   "pic" 'python-skeleton-class
   "pid" 'python-skeleton-def
   "pif" 'python-skeleton-for
@@ -534,6 +538,11 @@
 (dolist (pf '("SPC " "M-x "))
   (which-key-declare-prefixes-for-mode 'python-mode
     (concat pf "p")	"python"
+    (concat pf "pd")	"documentation"
+    (concat pf "pf")	"find"
+    (concat pf "pfa")	"assignment"
+    (concat pf "pfd")	"definition"
+    (concat pf "pfr")	"reference"
     (concat pf "pi")	"insert"
     (concat pf "pic")	"class"
     (concat pf "pid")	"def"
@@ -548,7 +557,6 @@
     (concat pf "psf")	"file"
     (concat pf "psr")	"region"
     ))
-
 
 ;; Declare prefix for markdown
 (dolist (pf '("SPC " "M-x "))
@@ -766,6 +774,11 @@
 (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 ;; States for anaconda view
 (add-to-list 'evil-emacs-state-modes 'anaconda-mode-view-mode)
+
+;;------------------------------------------------------------------------
+;; PY-YAPF
+;;------------------------------------------------------------------------
+(add-hook 'python-mode-hook 'py-yapf-enable-on-save)
 
 ;;------------------------------------------------------------------------
 ;; ACE-WINDOW
