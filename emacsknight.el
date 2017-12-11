@@ -785,7 +785,7 @@
 (add-hook 'python-mode-hook 'py-yapf-enable-on-save)
 
 ;;------------------------------------------------------------------------
-;; HIGHLIGHT-INDET-GUIDES
+;; HIGHLIGHT-INDENT-GUIDES
 ;;------------------------------------------------------------------------
 (add-hook 'python-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'character)
