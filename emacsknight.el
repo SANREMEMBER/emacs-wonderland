@@ -768,6 +768,8 @@
 ;; MARKDOWN
 ;;------------------------------------------------------------------------
 (setq markdown-hide-markup t)
+;; Add support for Lektor contents
+(add-to-list 'auto-mode-alist '("\\.lr\\'" . markdown-mode))
 
 ;;------------------------------------------------------------------------
 ;; ANACONDA
@@ -783,7 +785,7 @@
 (add-hook 'python-mode-hook 'py-yapf-enable-on-save)
 
 ;;------------------------------------------------------------------------
-;; PY-YAPF
+;; HIGHLIGHT-INDET-GUIDES
 ;;------------------------------------------------------------------------
 (add-hook 'python-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'character)
