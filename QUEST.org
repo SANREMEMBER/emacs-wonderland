@@ -120,6 +120,8 @@
     CLOSED: [2017-11-26 Min 18:48]
 *** SUCCESS Evil leader keeps a python
     CLOSED: [2017-11-26 Min 19:38]
+*** SUCCESS More beauty with org-fancy-priorities
+    CLOSED: [2018-03-05 Sen 13:00]
 *** TODO Anaconda and python as good pets
 *** TODO Train the leader of Evil [65%]
     - [X] A fot applications

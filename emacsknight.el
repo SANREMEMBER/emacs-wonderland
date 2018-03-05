@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -135,6 +135,8 @@
     '(diminish 'company-mode "C"))
   (eval-after-load "evil-escape"
     '(diminish 'evil-escape-mode))
+  (eval-after-load "org-fancy-priorities"
+    '(diminish 'org-fancy-priorities-mode))
   (eval-after-load "ivy"
     '(diminish 'ivy-mode))
   (eval-after-load "pandoc-mode"
@@ -170,6 +172,10 @@
 ;; ORG-BULLETS------------------------------------------------------------
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; ORG-FANCY-PRIORITIES----------------------------------------------------
+(require 'org-fancy-priorities)
+(add-hook 'org-mode-hook (lambda () (org-fancy-priorities-mode 1)))
+(setq org-fancy-priorities-list '("" "" "" ""))
 ;; ORG-AGENDA-------------------------------------------------------------
 (setq org-agenda-files (list "~/Documents/Projects/Kontrol Versi ODF/TODO.org"))
 ;; (add-to-list 'org-agenda-files "~/blahblahblah.org" 'append)
