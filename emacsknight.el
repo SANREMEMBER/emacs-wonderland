@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -854,6 +854,14 @@
 ;; ORG-AC-----------------------------------------------------------------
 (require 'org-ac)
 (org-ac/config-default)
+
+;;------------------------------------------------------------------------
+;; EASY-HUGO
+;;------------------------------------------------------------------------
+(setq easy-hugo-basedir "~/Documents/Hugo/")
+(setq easy-hugo-default-ext ".org")
+;; States for ledger report
+(add-to-list 'evil-emacs-state-modes 'easy-hugo-mode)
 
 ;;------------------------------------------------------------------------
 ;; DIRED
