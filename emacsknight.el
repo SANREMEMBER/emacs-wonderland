@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (emojify easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -340,7 +340,8 @@
  "hf"	 'counsel-describe-function
  "hk"	 'describe-key
  "hv"	 'counsel-describe-variable
- "ij"	 'insert-line-below		;; I
+ "ie"	 'emojify-insert-emoji		;; I
+ "ij"	 'insert-line-below
  "ik"	 'insert-line-above
  "jc"	 'evil-avy-goto-char		;; J
  "jl"	 'evil-avy-goto-line
@@ -481,6 +482,7 @@
     (concat pf "hk")	"key"
     (concat pf "hv")	"variable"
     (concat pf "i")	"insert"	;; I
+    (concat pf "ie")	"emoji"
     (concat pf "ij")	"below"
     (concat pf "ik")	"above"
     (concat pf "j")	"jump"		;; J
@@ -862,6 +864,11 @@
 (setq easy-hugo-default-ext ".org")
 ;; States for ledger report
 (add-to-list 'evil-emacs-state-modes 'easy-hugo-mode)
+
+;;------------------------------------------------------------------------
+;; EMOJIFY
+;;------------------------------------------------------------------------
+(add-hook 'after-init-hook #'global-emojify-mode)
 
 ;;------------------------------------------------------------------------
 ;; DIRED
