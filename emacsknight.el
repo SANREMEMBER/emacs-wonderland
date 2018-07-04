@@ -35,7 +35,7 @@
  '(inhibit-startup-screen t)
  '(ledger-reports
    (quote
-    (("bal" "%(binary) -f %(ledger-file) bal -X IDR")
+    (("bal" "%(binary) -f %(ledger-file) bal")
      ("reg" "%(binary) -f %(ledger-file) reg")
      ("payee" "%(binary) -f %(ledger-file) reg @%(payee)")
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
