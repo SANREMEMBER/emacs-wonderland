@@ -199,43 +199,10 @@
 (require 'ox-publish)
 (setq org-publish-project-alist
       '(
-	("private"
-	 :base-directory "~/Nextcloud/Org/"
-	 :base-extension "org"
-	 :publishing-directory "~/Nextcloud/WWW/"
-	 :recursive t
-	 :publishing-function org-html-publish-to-html
-
-	 :html-doctype "html5"
-	 :html-html5-fancy t
-	 :html-head-include-scripts nil
-	 :html-head-include-default-style nil
-	 :html-head "
-<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-<link href=\"file:///home/sanremember/Nextcloud/Org/Item/style.css\" rel=\"stylesheet\" type=\"text/css\" />
-<link href=\"file:///home/sanremember/Nextcloud/Org/Item/extra.css\" rel=\"stylesheet\" type=\"text/css\" />
-<link rel=\"shortcut icon\" href=\"file:///home/sanremember/Nextcloud/Org/Item/sanremember-circle.png\">
-<script src=\"file:///home/sanremember/Nextcloud/Org/Item/script.js\"></script> 
-"
-
-	 :with-toc nil
-	 :section-numbers nil
-	 :html-postamble nil
-	 :html-preamble nil
-	 :headline-levels 4
-
-	 :author "Hasannudin Amin"
-	 :email "sanremember@protonmail.com"
-
-	 :auto-sitemap t
-	 :sitemap-filename "Indeks.org"
-	 :sitemap-title "Indeks - SANREMEMBER"
-	 :sitemap-sort-files anti-chronologically)
-
 	("pages"
-	 :base-directory "~/Documents/Pages/org"
+	 :base-directory "~/Documents/Blog/Org"
 	 :base-extension "org"
-	 :publishing-directory "~/Documents/Pages"
+	 :publishing-directory "~/Documents/Blog/Org/publish"
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
 
@@ -244,17 +211,19 @@
 	 :html-head-include-scripts nil
 	 :html-head-include-default-style nil
 	 :html-head "
-<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-<link href=\"asset/style.css\" rel=\"stylesheet\" type=\"text/css\" />
-<link href=\"asset/extra.css\" rel=\"stylesheet\" type=\"text/css\" />
-<link href=\"asset/font.css\" rel=\"stylesheet\" type=\"text/css\" />
-<link rel=\"shortcut icon\" href=\"asset/sanremember-circle.png\">
-<script src=\"asset/script.js\"></script> 
+<link rel=\"stylesheet\" href=\"https://overpass-30e2.kxcdn.com/overpass.css\">
+<link rel=\"stylesheet\" href=\"https://overpass-30e2.kxcdn.com/overpass-mono.css\">
+<link href=\"media/style.css\" rel=\"stylesheet\" type=\"text/css\" />
+<link rel=\"shortcut icon\" href=\"media/sanremember-circle.png\">
 "
 
 	 :with-toc nil
 	 :section-numbers nil
-	 :html-postamble nil
+	 :html-postamble "
+<div class=\"ending\"><p> © <a href= \"/\">Hasannudin Amin</a> - Hanya Hamba Allah Subhanahu wa Ta'ala<p/></div>
+<script src=\"media/instantclick.min.js\" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+"
 	 :html-preamble nil
 	 :headline-levels 4
 
@@ -263,17 +232,17 @@
 
 	 :auto-sitemap t
 	 :sitemap-filename "index.org"
-	 :sitemap-title "Indeks - SANREMEMBER"
+	 :sitemap-title "SANREMEMBER"
 	 :sitemap-sort-files anti-chronologically)
 
 	("media"
-	 :base-directory "~/Nextcloud/Org/"
+	 :base-directory "~/Documents/Blog/Org/media"
 	 :base-extension "css\\|js\\|png\\|jpg\\|svg\\|gif"
-	 :publishing-directory "~/Nextcloud/WWW/"
+	 :publishing-directory "~/Documents/Blog/Org/publish/media"
 	 :recursive t
 	 :publishing-function org-publish-attachment)
 
-	("craft" :components ("htmlfly" "media"))))
+	("craft" :components ("pages" "media"))))
 
 ;; ABBREV-MODE------------------------------------------------------------
 (add-hook 'text-mode-hook (lambda () (abbrev-mode 1)))
