@@ -214,7 +214,7 @@
 <link rel=\"stylesheet\" href=\"https://overpass-30e2.kxcdn.com/overpass.css\">
 <link rel=\"stylesheet\" href=\"https://overpass-30e2.kxcdn.com/overpass-mono.css\">
 <link href=\"media/style.css\" rel=\"stylesheet\" type=\"text/css\" />
-<link rel=\"shortcut icon\" href=\"media/sanremember-circle.png\">
+<link rel=\"shortcut icon\" href=\"media/sanremember.png\">
 "
 
 	 :with-toc nil
