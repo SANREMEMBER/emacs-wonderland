@@ -194,6 +194,19 @@
 	 :empty-lines 1)
 	))
 
+;; ORG-BABEL---------------------------------------------------------------
+;; (org-babel-do-load-languages
+;;  'org-bable-load-languages
+;;  '((ledger . t)
+;;    (ditaa . t)))
+
+(with-eval-after-load 'org
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((ledger . t)
+     (plantuml . t)
+     )))
+
 ;; ORG-PUBLISH-------------------------------------------------------------
 (require 'htmlize)
 (require 'ox-publish)
@@ -735,8 +748,10 @@
 ;; DEFT
 ;;------------------------------------------------------------------------
 (require 'deft)
-(setq deft-directory "~/Nextcloud/Org/Serbaneka"
+(setq deft-directory "~/Documents/Organize/Notes"
       deft-extensions '("org" "md" "txt")
+      deft-default-extension "org"
+      deft-archive-directory "Archive"
       deft-text-mode 'org-mode
       deft-use-filename-as-title t
       deft-use-filter-string-for-filename t)
