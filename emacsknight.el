@@ -185,8 +185,8 @@
 (setq org-capture-templates
       '(
 	("j" "Capture journal"
-	 entry (file+datetree "/home/sanremember/Nextcloud/Org/Jurnal/1439.org")
-	 "* %^{Description}\n  :LOGBOOK:\n  %U\n  :END:\n  %?"
+	 entry (file+headline "/home/sanremember/Documents/Organize/Agenda/Now.org" "Dzulhijjah 1439")
+	 "** %^{Date} Dzulhijjah\n*** %^{Headline}\n    :LOGBOOK:\n    %U\n    :END:\n    %?"
 	 :empty-lines 1)
 	("u" "Capture quote"
 	 entry (file+headline "/home/sanremember/Nextcloud/Org/Serbaneka/Kutipan.org" "Daftar Kutipan Pilihan")
