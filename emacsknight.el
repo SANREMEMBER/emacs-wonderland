@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (emojify easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -844,9 +844,10 @@
 ;;------------------------------------------------------------------------
 ;; EASY-HUGO
 ;;------------------------------------------------------------------------
-(setq easy-hugo-basedir "~/Documents/Hugo/")
+(setq easy-hugo-basedir "~/Documents/Blog/Hugo/")
 (setq easy-hugo-default-ext ".org")
-;; States for ledger report
+(setq easy-hugo-postdir "content/blog")
+;; States for easy-hugo
 (add-to-list 'evil-emacs-state-modes 'easy-hugo-mode)
 
 ;;------------------------------------------------------------------------
