@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode org-ac auto-complete which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (company php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides py-yapf engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -839,12 +839,9 @@
   (setq ispell-extra-args '("--sug-mode=ultra" "--lang=id"))))
 
 ;;------------------------------------------------------------------------
-;; AUTO-COMPLETE
+;; COMPANY
 ;;------------------------------------------------------------------------
-(ac-config-default)
-;; ORG-AC-----------------------------------------------------------------
-(require 'org-ac)
-(org-ac/config-default)
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;;------------------------------------------------------------------------
 ;; EASY-HUGO
@@ -1014,4 +1011,5 @@
 (setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
 (setq tramp-backup-directory-alist backup-directory-alist)
 (setq tramp-auto-save-directory autosave-dir)
+
 
