@@ -848,6 +848,15 @@
 ;; COMPANY
 ;;------------------------------------------------------------------------
 (add-hook 'after-init-hook 'global-company-mode)
+;; No delay in showing suggestions.
+(setq company-idle-delay 0)
+;; Show suggestions after entering one character.
+(setq company-minimum-prefix-length 1)
+;; From bottom to top again
+(setq company-selection-wrap-around t)
+;; Use tab key to cycle through suggestions.
+;; ('tng' means 'tab and go')
+(company-tng-configure-default)
 
 ;;------------------------------------------------------------------------
 ;; EASY-HUGO
