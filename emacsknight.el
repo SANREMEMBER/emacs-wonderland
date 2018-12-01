@@ -130,7 +130,9 @@
   (eval-after-load "autorevert"
     '(diminish 'auto-revert-mode))
   (eval-after-load "abbrev"
-    '(diminish 'abbrev-mode "A"))
+    '(diminish 'abbrev-mode))
+  (eval-after-load "anaconda-mode"
+    '(diminish 'anaconda-mode "A"))
   (eval-after-load "company"
     '(diminish 'company-mode "C"))
   (eval-after-load "evil-escape"
@@ -749,6 +751,7 @@
 ;;------------------------------------------------------------------------
 (require 'deft)
 (setq deft-directory "~/Documents/Organize/Notes"
+      deft-archive-directory "~/Documents/Organize/Notes/Archive"
       deft-extensions '("org" "md" "txt")
       deft-default-extension "org"
       deft-archive-directory "Archive"
@@ -767,6 +770,9 @@
 ;; PYTHON
 ;;------------------------------------------------------------------------
 (setq python-shell-interpreter "/usr/bin/python3")
+(setenv "PYTHONPATH" "~/.local/lib/python3.7")
+(add-to-list 'exec-path "~/.local/bin")
+(add-hook 'python-mode-hook 'hl-line-mode)
 
 ;;------------------------------------------------------------------------
 ;; ANACONDA
