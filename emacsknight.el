@@ -177,7 +177,7 @@
 ;; ORG-FANCY-PRIORITIES----------------------------------------------------
 (require 'org-fancy-priorities)
 (add-hook 'org-mode-hook (lambda () (org-fancy-priorities-mode 1)))
-(setq org-fancy-priorities-list '("" "" "" ""))
+(setq org-fancy-priorities-list '("❗" "⮬" "⮮" "☕"))
 ;; ORG-AGENDA-------------------------------------------------------------
 (setq org-agenda-files (list "~/Documents/Projects/Kontrol Versi ODF/TODO.org"))
 ;; (add-to-list 'org-agenda-files "~/blahblahblah.org" 'append)
