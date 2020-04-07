@@ -1001,7 +1001,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Load secret weapon
-(load-file "~/.secretweapon.el")
+;; (load-file "~/.secretweapon.el")
 
 ;; Magical closing parens
 (electric-pair-mode 1)
