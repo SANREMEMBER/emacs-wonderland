@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (yapfify company php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (company-quickhelp yapfify company php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -861,6 +861,8 @@
 ;; Use tab key to cycle through suggestions.
 ;; ('tng' means 'tab and go')
 (company-tng-configure-default)
+;; add quickhelp
+(company-quickhelp-mode)
 
 ;;------------------------------------------------------------------------
 ;; EASY-HUGO
