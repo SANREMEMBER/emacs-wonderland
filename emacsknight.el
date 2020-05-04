@@ -150,7 +150,9 @@
   (eval-after-load "simple"
     '(diminish 'visual-line-mode "W"))
   (eval-after-load "which-key"
-    '(diminish 'which-key-mode)))
+    '(diminish 'which-key-mode))
+  (eval-after-load "yapfify"
+    '(diminish 'yapf-mode)))
 
 
 
