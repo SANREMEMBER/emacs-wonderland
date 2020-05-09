@@ -41,7 +41,7 @@
      ("account" "%(binary) -f %(ledger-file) reg %(account)"))))
  '(package-selected-packages
    (quote
-    (company-quickhelp yapfify company php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
+    (flycheck company-quickhelp yapfify company php-mode emojify easy-hugo org-fancy-priorities highlight-indent-guides engine-mode anaconda-mode yaml-mode ace-window ledger-mode web-beautify emmet-mode rainbow-mode writeroom-mode ox-pandoc pandoc-mode ox-twbs fasd markdown-mode which-key htmlize google-translate deft smex all-the-icons-gnus counsel ivy all-the-icons-dired neotree airline-themes powerline avy diminish evil-magit doom-themes magit evil-leader evil-escape org-bullets evil))))
 
 
 
@@ -863,6 +863,11 @@
 (company-tng-configure-default)
 ;; add quickhelp
 (company-quickhelp-mode)
+
+;;------------------------------------------------------------------------
+;; FLYCHECK
+;;------------------------------------------------------------------------
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;;------------------------------------------------------------------------
 ;; EASY-HUGO

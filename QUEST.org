@@ -122,7 +122,10 @@
     CLOSED: [2017-11-26 Min 19:38]
 *** SUCCESS More beauty with org-fancy-priorities
     CLOSED: [2018-03-05 Sen 13:00]
-*** TODO Anaconda and python as good pets
+*** SUCCESS Anaconda and python as good pets
+    CLOSED: [2020-05-03 Min 18:23]
+*** SUCCESS Syntax Checking power with flycheck
+    CLOSED: [2020-05-10 Min 06:19]
 *** TODO Train the leader of Evil [65%]
     - [X] A fot applications
     - [X] B for buffers
