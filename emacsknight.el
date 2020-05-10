@@ -341,6 +341,10 @@
  "op"	 'org-publish
  "osc"   'org-edit-src-exit
  "sa"	 'counsel-ag			;; S
+ "sed"   'engine/search-duckduckgo
+ "seg"   'engine/search-google
+ "ses"   'engine/search-stack-overflow
+ "sew"   'engine/search-wikipedia
  "sf"    'fasd-find-file
  "sl"	 'counsel-locate
  "so"	 'counsel-outline
@@ -487,6 +491,11 @@
     (concat pf "op")	"publish"
     (concat pf "s")	"search"	;; S
     (concat pf "sa")	"ag"
+    (concat pf "se")	"engine"
+    (concat pf "sed")	"duckduckgo"
+    (concat pf "seg")	"google"
+    (concat pf "ses")	"stackoverflow"
+    (concat pf "sew")	"wikipedia"
     (concat pf "sf")    "fasd"
     (concat pf "sl")	"locate"
     (concat pf "so")	"outline"
